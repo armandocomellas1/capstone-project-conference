@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .main_container {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+
+    .header_part {
+      background-image: url(./img/about_bg_head_good.png);
+      background-repeat: no-repeat, repeat;
+      background-size: 100%;
+      width: 100vw;
+      height: 100%;
+      background-color: rgb(247, 247, 248);
+      padding-bottom: 40px;
+
+      .about_menu {
+        display: flex;
+        justify-content: space-between;
+
+        .abuut_menu_img {
+          background-image: url(./img/mobile_menu_header.png);
+          background-repeat: no-repeat, repeat;
+          background-position: center;
+          background-size: 60%;
+          width: 10vw;
+          height: 10vh;
+          margin-left: 3.1%;
+          margin-top: 0.5%;
+        }
+
+        .hide_menu {
+          background-image: url(./img/disable_close.png);
+          background-repeat: no-repeat, repeat;
+          background-position: center;
+          background-size: 70%;
+          width: 10vw;
+          height: 10vh;
+          position: absolute;
+          top: 0%;
+          left: 2.3%;
+          visibility: hidden;
+        }
+
+        .menu_vertical {
+          display: flex;
+          flex-direction: column;
+
+          a {
+            visibility: hidden;
+            text-decoration: none;
+            color: #000;
+            font-size: 3.5vw;
+            z-index: 2;
+            height: 50%;
+            padding-right: 15px;
+            padding-top: 10px;
+          }
+        }
+      }
+
+      .subtitle_header {
+        color: #ec5242;
+        font-size: 4.5vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+      }
+
+      h1 {
+        color: #ec331e;
+        font-size: 7.6vw;
+        font-weight: bold;
+        width: 90%;
+        text-align: center;
+        margin: 4% auto;
+        word-spacing: 8px;
+      }
+
+      .header_article {
+        display: flex;
+        background-color: #fff;
+        width: 89%;
+        margin: 0 auto;
+        margin-top: 8%;
+        border: 1px solid #d3d3d3;
+        height: 25%;
+
+        h4 {
+          padding: 3.5% 2.5%;
+          text-align: center;
+          font-size: 165%;
+          line-height: 120%;
+          color: rgb(85, 73, 73);
+        }
+      }
+
+      .last_header_part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        p {
+          color:  rgb(54, 46, 46);
+          font-size: 120%;
+          margin-bottom: 10px;
+        }
+
+        a {
+          color:  rgb(54, 46, 46);
+          font-size: 120%;
+        }
+      }
+    }
+
+    .miidle_section {
+      width: 100vw;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 200%;
+        text-align: center;
+      }
+
+      p {
+        font-size: 130%;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 55px;
+      }
+
+      .division_logo {
+        border-bottom: 2px solid rgb(239, 81, 60);
+        width: 5%;
+        align-self: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .global_icon {
+        background-image: url(./img/cc_global_icon.png);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: 90%;
+        width: 100%;
+        height: 250px;
+      }
+
+      .division_middle {
+        border-bottom: 1px solid #d3d3d3;
+        width: 100%;
+        margin: 50px 0;
+        opacity: 0.4;
+      }
+    }
+
+    .last_section {
+      width: 100vw;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 200%;
+      }
+
+      .division_logo {
+        border-bottom: 2px solid rgb(239, 81, 60);
+        width: 5%;
+        align-self: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 110%;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 55px;
+      }
+
+      .global_2013 {
+        background-image: url(./img/2013_img.png);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: 80%;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+      }
+
+      .global_2011 {
+        background-image: url(./img/2011_img.png);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: 80%;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 70px;
+      }
+    }
+
+    .section_partners {
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .icon_partners {
+        background-image: url(./img/partners_logo.png);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 70px;
+      }
+    }
+
+    .footer_section {
+      width: 100vw;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      .cc_logo_last {
+        background-image: url(./img/commons_logo.png);
+        background-repeat: no-repeat, repeat;
+        width: 30px;
+        height: 30px;
+      }
+
+      .commons {
+        color: rgb(17, 15, 16);
+        font-size: 30px;
+        line-height: 16px;
+        font-weight: bold;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 100px) and (max-width: 590px) {
+  .main_container {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+
+    .header_part {
+      width: 100vw;
+      height: 100%;
+      padding-bottom: 40px;
+
+      .subtitle_header {
+        color: #ec5242;
+        font-size: 4.5vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+      }
+
+      h1 {
+        color: #ec331e;
+        font-size: 7.6vw;
+        font-weight: bold;
+        width: 90%;
+        text-align: center;
+        margin: 4% auto;
+        word-spacing: 8px;
+      }
+
+      .header_article {
+        display: flex;
+        background-color: #fff;
+        width: 89%;
+        margin: 0 auto;
+        margin-top: 8%;
+        border: 1px solid #d3d3d3;
+        height: auto;
+
+        h4 {
+          padding: 3.5% 2.5%;
+          text-align: center;
+          font-size: 4vw;
+          line-height: 120%;
+          color: rgb(85, 73, 73);
+        }
+      }
+
+      .last_header_part {
+        display: flex;
+
+        p {
+          color:  rgb(54, 46, 46);
+          font-size: 4vw;
+          margin-bottom: 10px;
+        }
+
+        a {
+          color:  rgb(54, 46, 46);
+          font-size: 4vw;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .miidle_section {
+      width: 100vw;
+      height: 100%;
+
+      h2 {
+        font-size: 7vw;
+        text-align: center;
+      }
+
+      p {
+        font-size: 5vw;
+        width: 60%;
+        margin-bottom: 55px;
+      }
+
+      .division_logo {
+        width: 5%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .global_icon {
+        background-size: 90%;
+        width: 100%;
+        height: 250px;
+      }
+
+      .division_middle {
+        width: 100%;
+        margin: 50px 0;
+        opacity: 0.4;
+      }
+    }
+
+    .last_section {
+      width: 100vw;
+      height: 100%;
+
+      h2 {
+        font-size: 5vw;
+        width: 670%;
+        text-align: center;
+      }
+
+      .division_logo {
+        width: 5%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 4vw;
+        width: 90%;
+        margin-bottom: 55px;
+      }
+
+      .global_2013 {
+        background-size: 80%;
+        width: 100%;
+        height: 150px;
+      }
+
+      .global_2011 {
+        background-size: 80%;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .section_partners {
+      width: 100vw;
+      height: 100%;
+
+      .icon_partners {
+        background-size: 100%;
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 10px;
+      }
+    }
+
+    .footer_section {
+      width: 100vw;
+      height: 100%;
+      background-color: #fff;
+      margin-bottom: 50px;
+
+      .cc_logo_last {
+        width: 20vw;
+        height: 30px;
+      }
+
+      .commons {
+        font-size: 5vw;
+        line-height: 18px;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      .rights {
+        font-size: 5vw;
+      }
+    }
+  }
+}
