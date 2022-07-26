@@ -1,0 +1,24 @@
+        <!-- <h2 class="speakers_title">Featured Speakers</h2>
+        <hr class="section_title_deco">
+        <div class="first_speaker">
+          <div class="img_speaker_one"></div>
+          <article class="article_speaker_one">
+            <h3 class="first_speak_title">Yochai Benkler</h3>
+            <p class="first_speak_subti">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+            <p class="first_speak_para">Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006</p>
+          </article>
+        </div>
+        <div class="first_speaker">
+          <div class="img_speaker_two"></div>
+          <article class="article_speaker_one">
+            <h3 class="first_speak_title">Yochai Benkler</h3>
+            <p class="first_speak_subti">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+            <p class="first_speak_para">Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006</p>
+          </article>
+        </div>
+        <button type="button" class="final_section">
+          <div class="see_more">
+            <div class="final_sect_Text">MORE</div>
+            <div class="final_sect_icon"></div>
+          </div>
+        </button> -->
