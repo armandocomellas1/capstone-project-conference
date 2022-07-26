@@ -2,7 +2,7 @@
 
 # Project Name
 
-- Portfolio: preserve data in the browser
+- Portfolio:
 
 ## Built With
 
