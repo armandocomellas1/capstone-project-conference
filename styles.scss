@@ -48,18 +48,16 @@
         left: 2.5%;
       }
 
-      // .hide_menu {
-      //   background-image: url(./img/disable_close.png);
-      //   background-repeat: no-repeat, repeat;
-      //   height: 100%;
-      //   background-size: 5%;
-      //   position: relative;
-      //   left: 7%;
-      //   top: -170%;
-      //   visibility: visible;
-      //   width: 100px;
-      //   height: 100px;
-      // }
+      .hide_menu {
+        background-image: url(./img/disable_close.png);
+        background-repeat: no-repeat, repeat;
+        height: 100%;
+        background-size: 5%;
+        position: relative;
+        left: 7%;
+        top: -170%;
+        visibility: visible;
+      }
 
       .bg_img_head {
         background-image: url(./img/chess_rotate.png);
