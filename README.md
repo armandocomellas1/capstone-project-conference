@@ -2,7 +2,7 @@
 
 # Project Name
 
-- Portfolio: HTML/CSS & JavaScript capstone project - Conference page
+- Portfolio: HTML/CSS & JavaScript capstone project - Conference page.
 
 ## Built With
 
