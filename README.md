@@ -29,7 +29,7 @@ You can check a live working version of this project here: [live-demo](https://a
 
 ## Live video showing the project
 
-You can check a live working version of this project here: [live-demo](https://drive.google.com/file/d/142myMFMnUjq5iIXxvJ3J1TdbiBf5tKVd/view?usp=sharing)
+You can check a live working version of this project here: [live-demo](https://drive.google.com/file/d/1Y7vXFLuFu1SEfDlnbkkC3J1IbYIUPWwm/view?usp=sharing)
 
 
 ## Getting Started
