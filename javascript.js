@@ -64,14 +64,24 @@ function functionName(e) {
 
   if (e != undefined) {
     var storeScreenSize = e.currentTarget.screen.availWidth;
-    console.log("storeScreenSize", storeScreenSize);
 
   } else {
     storeScreenSize = getScreenSize;
   }
 
+  var converToPx = storeScreenSize * .17 + "px";
+  var converToPxSection = storeScreenSize * .53 + "px";
+  var converTofooters = storeScreenSize * .34 + "px";
+
+  document.getElementsByClassName('img_bg_speakers')[0].style.height = converToPx;
+  document.getElementsByClassName('img_bg_footers')[0].style.height = converToPx;
+  document.getElementsByClassName('containers_footer')[0].style.height = converTofooters;
+
+  converToPxSection = storeScreenSize * .80;
+  document.getElementsByClassName('section_speakers_desktop')[0].style.height = converToPxSection;
+
   if (storeScreenSize <= 767) {
-    console.log(storeScreenSize);
+
     for (var i = 0; i < 2; i++) {
 
       let featureSection =
@@ -104,7 +114,6 @@ function functionName(e) {
       insertFeatureData.innerHTML = featureSection;
     }
   } else if (storeScreenSize >= 768) {
-    console.log(storeScreenSize);
 
     for (var j = 0; j < 2; j++) {
 
