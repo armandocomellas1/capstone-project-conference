@@ -202,11 +202,10 @@
   .main_container .section_container .section_part_one {
     display: flex;
     background: rgba(255, 255, 255, 0.1);
-    margin-top: 12px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 0.1%;
+    margin-top: 12px;
     width: 250px;
     height: 255px;
   }
@@ -438,6 +437,10 @@
     font-size: 3.5vw;
     z-index: 2;
   }
+  .main_container .nav_container .special #menu_mobile a:active {
+    color: #ec5242;
+    z-index: 2;
+  }
   .main_container .nav_container .special .icon_menu {
     background-image: url(./img/mobile_menu_header.png);
     background-repeat: no-repeat, repeat;
@@ -612,7 +615,7 @@
   }
   .main_container .section_container .section_part_one {
     display: grid;
-    grid-template-columns: 10% 20% 70%;
+    grid-template-columns: 20% 20% 60%;
     grid-auto-rows: 100px;
     column-gap: 3%;
     background: rgba(255, 255, 255, 0.1);

@@ -12,6 +12,25 @@
   .main_container #menu_expand {
     display: none;
   }
+  .main_container .last_header_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .main_container .last_header_part p {
+    color: rgb(54, 46, 46);
+    font-size: 120%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .main_container .last_header_part a {
+    color: rgb(54, 46, 46);
+    font-size: 120%;
+    font-weight: bold;
+  }
   .main_container .header_part {
     background-image: url(./img/about_bg_desktop.png);
     background-repeat: no-repeat, repeat;
@@ -164,25 +183,6 @@
     line-height: 150%;
     color: rgb(122, 116, 116);
   }
-  .main_container .header_part .last_header_part {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .main_container .header_part .last_header_part p {
-    color: rgb(54, 46, 46);
-    font-size: 120%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  .main_container .header_part .last_header_part a {
-    color: rgb(54, 46, 46);
-    font-size: 120%;
-    font-weight: bold;
-  }
   .main_container .miidle_section {
     width: 100vw;
     height: 100%;
@@ -190,6 +190,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
   .main_container .miidle_section h2 {
     font-size: 200%;
@@ -199,7 +200,6 @@
     display: none;
   }
   .main_container .miidle_section .paragraph_desktop {
-    font-size: 130%;
     width: 45%;
     margin: 0 auto;
     text-align: center;
@@ -356,6 +356,10 @@
     padding-right: 15px;
     padding-top: 10px;
   }
+  .main_container .header_part .about_menu .menu_vertical a:active {
+    color: #ec5242;
+    z-index: 2;
+  }
   .main_container .header_part .division_logo_header {
     display: none;
   }
@@ -407,7 +411,7 @@
     font-size: 120%;
     margin-bottom: 10px;
   }
-  .main_container .header_part .last_header_part a {
+  .main_container .header_part .last_header_part .link_last_header {
     color: rgb(54, 46, 46);
     font-size: 120%;
     font-weight: bold;
@@ -468,7 +472,8 @@
     align-items: center;
   }
   .main_container .last_section h2 {
-    font-size: 200%;
+    font-size: 5vw;
+    text-align: center;
   }
   .main_container .last_section .division_logo {
     border-bottom: 2px solid rgb(239, 81, 60);
@@ -477,7 +482,7 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  .main_container .last_section p {
+  .main_container .last_section .para_last_section {
     font-size: 110%;
     width: 60%;
     margin: 0 auto;
@@ -611,36 +616,6 @@
     color: rgb(54, 46, 46);
     font-size: 4vw;
     font-weight: bold;
-  }
-  .main_container .last_section {
-    width: 100vw;
-    height: 100%;
-  }
-  .main_container .last_section h2 {
-    font-size: 5vw;
-    width: 670%;
-    text-align: center;
-  }
-  .main_container .last_section .division_logo {
-    width: 5%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  .main_container .last_section p {
-    font-size: 4vw;
-    width: 90%;
-    margin-bottom: 55px;
-  }
-  .main_container .last_section .global_2013 {
-    background-size: 80%;
-    width: 100%;
-    height: 150px;
-  }
-  .main_container .last_section .global_2011 {
-    background-size: 80%;
-    width: 100%;
-    height: 150px;
-    margin-bottom: 10px;
   }
   .main_container .section_partners {
     width: 100vw;
