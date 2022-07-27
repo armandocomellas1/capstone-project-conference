@@ -17,6 +17,8 @@
     width: 100vw;
     height: 100%;
     overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .main_container .nav_container {
     display: none;
@@ -90,6 +92,7 @@
     height: 100%;
     padding: 0 3%;
     background-color: rgb(247, 247, 248);
+    margin: 0;
   }
   .main_container .head_container_desktop .container_img_header {
     display: flex;
@@ -204,7 +207,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 0.1%;
-    width: 12%;
+    width: 250px;
     height: 255px;
   }
   .main_container .section_container .section_part_one .section_image_one {
@@ -272,7 +275,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 950px;
   }
   .main_container .section_speakers_desktop .speakers_title {
     text-align: center;
@@ -297,7 +299,7 @@
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: 80%;
-    width: 12vw;
+    width: 13vw;
     margin-right: 10px;
   }
   .main_container .section_speakers_desktop .first_speaker .img_speaker_two {
@@ -305,7 +307,7 @@
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: 80%;
-    width: 12vw;
+    width: 13vw;
     margin-right: 10px;
   }
   .main_container .section_speakers_desktop .first_speaker .img_speaker_three {
@@ -313,7 +315,7 @@
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: 80%;
-    width: 12vw;
+    width: 13vw;
     margin-right: 10px;
   }
   .main_container .section_speakers_desktop .first_speaker .img_speaker_four {
@@ -321,7 +323,7 @@
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: 80%;
-    width: 12vw;
+    width: 13vw;
     margin-right: 10px;
   }
   .main_container .section_speakers_desktop .first_speaker .img_speaker_five {
@@ -329,7 +331,7 @@
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: 80%;
-    width: 12vw;
+    width: 13vw;
     margin-right: 10px;
   }
   .main_container .section_speakers_desktop .first_speaker .img_speaker_six {
@@ -337,7 +339,7 @@
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: 80%;
-    width: 12vw;
+    width: 13vw;
     margin-right: 10px;
   }
   .main_container .section_speakers_desktop .first_speaker .article_speaker_one {
@@ -389,22 +391,17 @@
   .main_container .containers_footer {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    height: 500px;
   }
   .main_container .containers_footer .img_bg_speakers {
     background-image: url(./img/desktop_spaekers_bg_img.png);
     background-repeat: no-repeat, repeat;
     background-size: 100%;
-    width: 100vw;
-    height: 34vh;
   }
   .main_container .containers_footer .img_bg_footers {
     background-image: url(./img/footer_desktop.png);
     background-repeat: no-repeat, repeat;
     background-size: 100%;
-    width: 100vw;
-    height: 34vh;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -752,6 +749,9 @@
     filter: opacity(0.5) drop-shadow(0 0 0 #ec5242);
     position: relative;
     right: 2%;
+  }
+  .main_container .containers_footer {
+    display: none;
   }
 }
 @media (min-width: 100px) and (max-width: 500px) {

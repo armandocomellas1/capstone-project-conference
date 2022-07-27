@@ -18,6 +18,8 @@
     width: 100vw;
     height: 100%;
     overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
 
     .nav_container {
       display: none;
@@ -102,6 +104,7 @@
       height: 100%;
       padding: 0 3%;
       background-color: rgb(247, 247, 248);
+      margin: 0;
 
       .container_img_header {
         display: flex;
@@ -231,7 +234,7 @@
         flex-direction: column;
         align-items: center;
         margin: 0 .1%;
-        width: 12%;
+        width: 250px;
         height: 255px;
       }
 
@@ -311,7 +314,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 950px;
 
       .speakers_title {
         text-align: center;
@@ -338,7 +340,7 @@
           background-repeat: no-repeat, repeat;
           background-position: center;
           background-size: 80%;
-          width: 12vw;
+          width: 13vw;
           margin-right: 10px;
         }
 
@@ -347,7 +349,7 @@
           background-repeat: no-repeat, repeat;
           background-position: center;
           background-size: 80%;
-          width: 12vw;
+          width: 13vw;
           margin-right: 10px;
         }
 
@@ -356,7 +358,7 @@
           background-repeat: no-repeat, repeat;
           background-position: center;
           background-size: 80%;
-          width: 12vw;
+          width: 13vw;
           margin-right: 10px;
         }
 
@@ -365,7 +367,7 @@
           background-repeat: no-repeat, repeat;
           background-position: center;
           background-size: 80%;
-          width: 12vw;
+          width: 13vw;
           margin-right: 10px;
         }
 
@@ -374,7 +376,7 @@
           background-repeat: no-repeat, repeat;
           background-position: center;
           background-size: 80%;
-          width: 12vw;
+          width: 13vw;
           margin-right: 10px;
         }
 
@@ -383,7 +385,7 @@
           background-repeat: no-repeat, repeat;
           background-position: center;
           background-size: 80%;
-          width: 12vw;
+          width: 13vw;
           margin-right: 10px;
         }
 
@@ -446,23 +448,18 @@
     .containers_footer {
       display: flex;
       flex-direction: column;
-      width: 100%;
-      height: 100%;
+      height: 500px;
 
       .img_bg_speakers {
         background-image: url(./img/desktop_spaekers_bg_img.png);
         background-repeat: no-repeat, repeat;
         background-size: 100%;
-        width: 100vw;
-        height: 34vh;
       }
 
       .img_bg_footers {
         background-image: url(./img/footer_desktop.png);
         background-repeat: no-repeat, repeat;
         background-size: 100%;
-        width: 100vw;
-        height: 34vh;
       }
     }
   }
@@ -864,6 +861,10 @@
           }
         }
       }
+    }
+
+    .containers_footer {
+      display: none;
     }
   }
 }

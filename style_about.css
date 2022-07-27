@@ -3,20 +3,89 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 2000px) {
   .main_container {
     width: 100vw;
     height: 100%;
     overflow: hidden;
   }
+  .main_container #menu_expand {
+    display: none;
+  }
   .main_container .header_part {
-    background-image: url(./img/about_bg_head_good.png);
+    background-image: url(./img/about_bg_desktop.png);
     background-repeat: no-repeat, repeat;
-    background-size: 100%;
-    width: 100vw;
-    height: 100%;
+    background-size: 90%;
+    background-position-y: 90px;
+    background-position-x: 30px;
     background-color: rgb(247, 247, 248);
     padding-bottom: 40px;
+  }
+  .main_container .header_part .desktop_version_about {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_container .header_part .desktop_version_about .top_header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(62, 62, 62);
+    height: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 12.3%;
+  }
+  .main_container .header_part .desktop_version_about .top_header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 10px;
+  }
+  .main_container .header_part .desktop_version_about .top_header .icon_face {
+    color: #fff;
+    margin-right: 1%;
+  }
+  .main_container .header_part .desktop_version_about .top_header .icon_twitter {
+    color: #fff;
+    margin-right: 1%;
+  }
+  .main_container .header_part .desktop_version_about .main_nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(225, 225, 225);
+    box-shadow: 5px 5px 5px rgb(225, 225, 225);
+  }
+  .main_container .header_part .desktop_version_about .main_nav .icon_global_summit {
+    background-image: url(./img/global_icon_summit.png);
+    background-repeat: no-repeat, repeat;
+    min-width: 15vw;
+    min-height: 5vh;
+    margin-right: 9%;
+    margin-left: 20%;
+  }
+  .main_container .header_part .desktop_version_about .main_nav .menu_under {
+    margin: 0 2%;
+    text-decoration: none;
+    color: rgb(131, 124, 124);
+    font-size: 1vw;
+  }
+  .main_container .header_part .desktop_version_about .main_nav .menu_under_last {
+    margin-left: 3.5%;
+    text-decoration: none;
+    color: #ec5242;
+    border: 4px solid #ec5242;
+    padding: 5px;
+    font-size: 1vw;
+  }
+  .main_container .header_part .desktop_version_about .main_nav .color_about {
+    color: #ec5242;
   }
   .main_container .header_part .about_menu {
     display: flex;
@@ -59,51 +128,60 @@
     padding-top: 10px;
   }
   .main_container .header_part .subtitle_header {
-    color: #ec5242;
-    font-size: 4.5vw;
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
+    display: none;
   }
   .main_container .header_part h1 {
     color: #ec331e;
-    font-size: 7.6vw;
+    font-size: 3.4vw;
     font-weight: bold;
-    width: 90%;
+    width: 50%;
     text-align: center;
-    margin: 4% auto;
+    margin: 0 auto;
     word-spacing: 8px;
+    margin-top: 6%;
   }
-  .main_container .header_part .header_article {
+  .main_container .header_part .division_logo_header {
+    border-bottom: 2px solid rgb(239, 81, 60);
+    width: 3%;
+    margin: 20px auto;
+  }
+  .main_container .header_part .header_article_mobile {
+    display: none;
+  }
+  .main_container .header_part .header_article_desktop {
     display: flex;
     background-color: #fff;
-    width: 89%;
-    margin: 0 auto;
-    margin-top: 8%;
+    width: 61%;
+    margin-left: 21.4%;
+    margin-top: 3.9%;
     border: 1px solid #d3d3d3;
-    height: 25%;
+    height: 100%;
   }
-  .main_container .header_part .header_article h4 {
-    padding: 3.5% 2.5%;
+  .main_container .header_part .header_article_desktop h4 {
+    padding: 2% 5%;
     text-align: center;
-    font-size: 165%;
-    line-height: 120%;
-    color: rgb(85, 73, 73);
+    font-size: 100%;
+    line-height: 150%;
+    color: rgb(122, 116, 116);
   }
   .main_container .header_part .last_header_part {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    width: 100%;
+    margin-bottom: 50px;
   }
   .main_container .header_part .last_header_part p {
     color: rgb(54, 46, 46);
     font-size: 120%;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
   .main_container .header_part .last_header_part a {
     color: rgb(54, 46, 46);
     font-size: 120%;
+    font-weight: bold;
   }
   .main_container .miidle_section {
     width: 100vw;
@@ -117,12 +195,18 @@
     font-size: 200%;
     text-align: center;
   }
-  .main_container .miidle_section p {
+  .main_container .miidle_section .paragraph_mobile {
+    display: none;
+  }
+  .main_container .miidle_section .paragraph_desktop {
     font-size: 130%;
-    width: 60%;
+    width: 45%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 55px;
+    font-size: 100%;
+    line-height: 100%;
+    color: rgb(122, 116, 116);
   }
   .main_container .miidle_section .division_logo {
     border-bottom: 2px solid rgb(239, 81, 60);
@@ -131,11 +215,14 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
+  .main_container .miidle_section .global_icon_mobile {
+    display: none;
+  }
   .main_container .miidle_section .global_icon {
     background-image: url(./img/cc_global_icon.png);
     background-repeat: no-repeat, repeat;
     background-position: center;
-    background-size: 90%;
+    background-size: 30%;
     width: 100%;
     height: 250px;
   }
@@ -170,23 +257,257 @@
     text-align: center;
     margin-bottom: 55px;
   }
-  .main_container .last_section .global_2013 {
+  .main_container .last_section .container_past_img_mobile {
+    display: none;
+  }
+  .main_container .last_section .container_past_img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  .main_container .last_section .container_past_img .global_2013 {
     background-image: url(./img/2013_img.png);
     background-repeat: no-repeat, repeat;
-    background-position: center;
+    background-position: right;
     background-size: 80%;
-    width: 100%;
+    width: 40vw;
     height: 250px;
-    margin-bottom: 20px;
+    margin-right: 1%;
   }
-  .main_container .last_section .global_2011 {
+  .main_container .last_section .container_past_img .global_2011 {
     background-image: url(./img/2011_img.png);
     background-repeat: no-repeat, repeat;
-    background-position: center;
+    background-position: left;
     background-size: 80%;
-    width: 100%;
+    width: 40vw;
     height: 250px;
-    margin-bottom: 70px;
+  }
+  .main_container .section_partners {
+    display: none;
+  }
+  .main_container .footer_section {
+    display: none;
+  }
+  .main_container .footer_desktop {
+    background-image: url(./img/about_footer_section.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main_container {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+  }
+  .main_container .header_part {
+    background-image: url(./img/about_bg_head_good.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(247, 247, 248);
+    padding-bottom: 40px;
+  }
+  .main_container .header_part .desktop_version_about {
+    display: none;
+  }
+  .main_container .header_part .about_menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_container .header_part .about_menu .abuut_menu_img {
+    background-image: url(./img/mobile_menu_header.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 10vw;
+    height: 10vh;
+    margin-left: 3.1%;
+    margin-top: 0.5%;
+  }
+  .main_container .header_part .about_menu .hide_menu {
+    background-image: url(./img/disable_close.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    top: 0%;
+    left: 2.3%;
+    visibility: hidden;
+  }
+  .main_container .header_part .about_menu .menu_vertical {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_container .header_part .about_menu .menu_vertical a {
+    visibility: hidden;
+    text-decoration: none;
+    color: #000;
+    font-size: 3.5vw;
+    z-index: 2;
+    height: 50%;
+    padding-right: 15px;
+    padding-top: 10px;
+  }
+  .main_container .header_part .division_logo_header {
+    display: none;
+  }
+  .main_container .header_part .subtitle_header {
+    color: #ec5242;
+    font-size: 4.5vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .main_container .header_part h1 {
+    color: #ec331e;
+    font-size: 7.6vw;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    margin: 4% auto;
+    word-spacing: 8px;
+  }
+  .main_container .header_part .header_article_desktop {
+    display: none;
+  }
+  .main_container .header_part .header_article_mobile {
+    display: flex;
+    background-color: #fff;
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 8%;
+    border: 1px solid #d3d3d3;
+    height: 25%;
+  }
+  .main_container .header_part .header_article_mobile h4 {
+    padding: 3.5% 2.5%;
+    text-align: center;
+    font-size: 165%;
+    line-height: 120%;
+    color: rgb(85, 73, 73);
+  }
+  .main_container .header_part .last_header_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .main_container .header_part .last_header_part p {
+    color: rgb(54, 46, 46);
+    font-size: 120%;
+    margin-bottom: 10px;
+  }
+  .main_container .header_part .last_header_part a {
+    color: rgb(54, 46, 46);
+    font-size: 120%;
+    font-weight: bold;
+  }
+  .main_container .miidle_section {
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main_container .miidle_section h2 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .main_container .miidle_section .paragraph_desktop {
+    display: none;
+  }
+  .main_container .miidle_section .paragraph_mobile {
+    font-size: 3vw;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  .main_container .miidle_section .division_logo {
+    border-bottom: 2px solid rgb(239, 81, 60);
+    width: 5%;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .main_container .miidle_section .global_icon {
+    display: none;
+  }
+  .main_container .miidle_section .global_icon_mobile {
+    background-image: url(./img/cc_global_icon.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 500px;
+    height: 200px;
+  }
+  .main_container .miidle_section .division_middle {
+    border-bottom: 1px solid #d3d3d3;
+    width: 100vw;
+    margin: 50px 0;
+    opacity: 0.4;
+  }
+  .main_container .last_section {
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_container .last_section h2 {
+    font-size: 200%;
+  }
+  .main_container .last_section .division_logo {
+    border-bottom: 2px solid rgb(239, 81, 60);
+    width: 5%;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .main_container .last_section p {
+    font-size: 110%;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  .main_container .last_section .container_past_img {
+    display: none;
+  }
+  .main_container .last_section .container_past_img_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    height: 100%;
+    margin-bottom: 5%;
+  }
+  .main_container .last_section .container_past_img_mobile .global_2013_mobile {
+    background-image: url(./img/2013_img.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+  }
+  .main_container .last_section .container_past_img_mobile .global_2011_mobile {
+    background-image: url(./img/2011_img.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
   }
   .main_container .section_partners {
     width: 100vw;
@@ -221,10 +542,15 @@
   }
   .main_container .footer_section .commons {
     color: rgb(17, 15, 16);
-    font-size: 30px;
+    font-size: 3vw;
     line-height: 16px;
     font-weight: bold;
     margin-right: 50px;
+    width: 30%;
+  }
+  .main_container .footer_section .rights {
+    width: 30%;
+    font-size: 2vw;
   }
 }
 @media (min-width: 100px) and (max-width: 590px) {
@@ -254,7 +580,10 @@
     margin: 4% auto;
     word-spacing: 8px;
   }
-  .main_container .header_part .header_article {
+  .main_container .header_part .header_article_desktop {
+    display: none;
+  }
+  .main_container .header_part .header_article_mobile {
     display: flex;
     background-color: #fff;
     width: 89%;
@@ -263,7 +592,7 @@
     border: 1px solid #d3d3d3;
     height: auto;
   }
-  .main_container .header_part .header_article h4 {
+  .main_container .header_part .header_article_mobile h4 {
     padding: 3.5% 2.5%;
     text-align: center;
     font-size: 4vw;
@@ -282,34 +611,6 @@
     color: rgb(54, 46, 46);
     font-size: 4vw;
     font-weight: bold;
-  }
-  .main_container .miidle_section {
-    width: 100vw;
-    height: 100%;
-  }
-  .main_container .miidle_section h2 {
-    font-size: 7vw;
-    text-align: center;
-  }
-  .main_container .miidle_section p {
-    font-size: 5vw;
-    width: 60%;
-    margin-bottom: 55px;
-  }
-  .main_container .miidle_section .division_logo {
-    width: 5%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  .main_container .miidle_section .global_icon {
-    background-size: 90%;
-    width: 100%;
-    height: 250px;
-  }
-  .main_container .miidle_section .division_middle {
-    width: 100%;
-    margin: 50px 0;
-    opacity: 0.4;
   }
   .main_container .last_section {
     width: 100vw;

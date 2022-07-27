@@ -3,20 +3,100 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 2000px) {
   .main_container {
     width: 100vw;
     height: 100%;
     overflow: hidden;
 
+    #menu_expand {
+      display: none;
+    }
+
     .header_part {
-      background-image: url(./img/about_bg_head_good.png);
+      background-image: url(./img/about_bg_desktop.png);
       background-repeat: no-repeat, repeat;
-      background-size: 100%;
-      width: 100vw;
-      height: 100%;
+      background-size: 90%;
+      background-position-y: 90px;
+      background-position-x: 30px;
       background-color: rgb(247, 247, 248);
       padding-bottom: 40px;
+
+      .desktop_version_about {
+        display: flex;
+        flex-direction: column;
+
+        .top_header {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          background-color: rgb(62, 62, 62);
+          height: 30px;
+          margin-bottom: 0;
+          margin-top: 0;
+          padding-bottom: 0;
+          padding-top: 0;
+          padding-right: 12.3%;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+            margin: 0 10px;
+          }
+
+          .icon_face {
+            color: #fff;
+            margin-right: 1%;
+          }
+
+          .icon_twitter {
+            color: #fff;
+            margin-right: 1%;
+          }
+        }
+
+        .main_nav {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          height: 65px;
+          background-color: #fff;
+          border-bottom: 2px solid rgb(225, 225, 225);
+          box-shadow: 5px 5px 5px rgb(225, 225, 225);
+
+          .icon_global_summit {
+            background-image: url(./img/global_icon_summit.png);
+            background-repeat: no-repeat, repeat;
+            min-width: 15vw;
+            min-height: 5vh;
+            margin-right: 9%;
+            margin-left: 20%;
+          }
+
+          .menu_under {
+            margin: 0 2%;
+            text-decoration: none;
+            color: rgb(131, 124, 124);
+            font-size: 1vw;
+          }
+
+          .menu_under_last {
+            margin-left: 3.5%;
+            text-decoration: none;
+            color: #ec5242;
+            border: 4px solid #ec5242;
+            padding: 5px;
+            font-size: 1vw;
+          }
+
+          .color_about {
+            color: #ec5242;
+          }
+        }
+      }
 
       .about_menu {
         display: flex;
@@ -64,38 +144,45 @@
       }
 
       .subtitle_header {
-        color: #ec5242;
-        font-size: 4.5vw;
-        display: flex;
-        justify-content: center;
-        margin-top: 10%;
+        display: none;
       }
 
       h1 {
         color: #ec331e;
-        font-size: 7.6vw;
+        font-size: 3.4vw;
         font-weight: bold;
-        width: 90%;
+        width: 50%;
         text-align: center;
-        margin: 4% auto;
+        margin: 0 auto;
         word-spacing: 8px;
+        margin-top: 6%;
       }
 
-      .header_article {
+      .division_logo_header {
+        border-bottom: 2px solid rgb(239, 81, 60);
+        width: 3%;
+        margin: 20px auto;
+      }
+
+      .header_article_mobile {
+        display: none;
+      }
+
+      .header_article_desktop {
         display: flex;
         background-color: #fff;
-        width: 89%;
-        margin: 0 auto;
-        margin-top: 8%;
+        width: 61%;
+        margin-left: 21.4%;
+        margin-top: 3.9%;
         border: 1px solid #d3d3d3;
-        height: 25%;
+        height: 100%;
 
         h4 {
-          padding: 3.5% 2.5%;
+          padding: 2% 5%;
           text-align: center;
-          font-size: 165%;
-          line-height: 120%;
-          color: rgb(85, 73, 73);
+          font-size: 100%;
+          line-height: 150%;
+          color: rgb(122, 116, 116);
         }
       }
 
@@ -104,16 +191,20 @@
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
+        width: 100%;
+        margin-bottom: 50px;
 
         p {
           color:  rgb(54, 46, 46);
           font-size: 120%;
           margin-bottom: 10px;
+          margin-top: 10px;
         }
 
         a {
           color:  rgb(54, 46, 46);
           font-size: 120%;
+          font-weight: bold;
         }
       }
     }
@@ -131,12 +222,19 @@
         text-align: center;
       }
 
-      p {
+      .paragraph_mobile {
+        display: none;
+      }
+
+      .paragraph_desktop {
         font-size: 130%;
-        width: 60%;
+        width: 45%;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 55px;
+        font-size: 100%;
+        line-height: 100%;
+        color: rgb(122, 116, 116);
       }
 
       .division_logo {
@@ -147,11 +245,15 @@
         margin-bottom: 30px;
       }
 
+      .global_icon_mobile {
+        display: none;
+      }
+
       .global_icon {
         background-image: url(./img/cc_global_icon.png);
         background-repeat: no-repeat, repeat;
         background-position: center;
-        background-size: 90%;
+        background-size: 30%;
         width: 100%;
         height: 250px;
       }
@@ -192,24 +294,297 @@
         margin-bottom: 55px;
       }
 
-      .global_2013 {
-        background-image: url(./img/2013_img.png);
-        background-repeat: no-repeat, repeat;
-        background-position: center;
-        background-size: 80%;
-        width: 100%;
-        height: 250px;
-        margin-bottom: 20px;
+      .container_past_img_mobile {
+        display: none;
       }
 
-      .global_2011 {
-        background-image: url(./img/2011_img.png);
+      .container_past_img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-bottom: 5%;
+
+        .global_2013 {
+          background-image: url(./img/2013_img.png);
+          background-repeat: no-repeat, repeat;
+          background-position: right;
+          background-size: 80%;
+          width: 40vw;
+          height: 250px;
+          margin-right: 1%;
+        }
+
+        .global_2011 {
+          background-image: url(./img/2011_img.png);
+          background-repeat: no-repeat, repeat;
+          background-position: left;
+          background-size: 80%;
+          width: 40vw;
+          height: 250px;
+        }
+      }
+    }
+
+    .section_partners {
+      display: none;
+    }
+
+    .footer_section {
+      display: none;
+    }
+
+    .footer_desktop {
+      background-image: url(./img/about_footer_section.png);
+      background-repeat: no-repeat, repeat;
+      background-size: 100%;
+      width: 100vw;
+      height: 250px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main_container {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+
+    .header_part {
+      background-image: url(./img/about_bg_head_good.png);
+      background-repeat: no-repeat, repeat;
+      background-size: 100%;
+      width: 100vw;
+      height: 100%;
+      background-color: rgb(247, 247, 248);
+      padding-bottom: 40px;
+
+      .desktop_version_about {
+        display: none;
+      }
+
+      .about_menu {
+        display: flex;
+        justify-content: space-between;
+
+        .abuut_menu_img {
+          background-image: url(./img/mobile_menu_header.png);
+          background-repeat: no-repeat, repeat;
+          background-position: center;
+          background-size: 60%;
+          width: 10vw;
+          height: 10vh;
+          margin-left: 3.1%;
+          margin-top: 0.5%;
+        }
+
+        .hide_menu {
+          background-image: url(./img/disable_close.png);
+          background-repeat: no-repeat, repeat;
+          background-position: center;
+          background-size: 70%;
+          width: 10vw;
+          height: 10vh;
+          position: absolute;
+          top: 0%;
+          left: 2.3%;
+          visibility: hidden;
+        }
+
+        .menu_vertical {
+          display: flex;
+          flex-direction: column;
+
+          a {
+            visibility: hidden;
+            text-decoration: none;
+            color: #000;
+            font-size: 3.5vw;
+            z-index: 2;
+            height: 50%;
+            padding-right: 15px;
+            padding-top: 10px;
+          }
+        }
+      }
+
+      .division_logo_header {
+        display: none;
+      }
+
+      .subtitle_header {
+        color: #ec5242;
+        font-size: 4.5vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+      }
+
+      h1 {
+        color: #ec331e;
+        font-size: 7.6vw;
+        font-weight: bold;
+        width: 90%;
+        text-align: center;
+        margin: 4% auto;
+        word-spacing: 8px;
+      }
+
+      .header_article_desktop {
+        display: none;
+      }
+
+      .header_article_mobile {
+        display: flex;
+        background-color: #fff;
+        width: 89%;
+        margin: 0 auto;
+        margin-top: 8%;
+        border: 1px solid #d3d3d3;
+        height: 25%;
+
+        h4 {
+          padding: 3.5% 2.5%;
+          text-align: center;
+          font-size: 165%;
+          line-height: 120%;
+          color: rgb(85, 73, 73);
+        }
+      }
+
+      .last_header_part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        margin: 30px auto;
+        text-align: center;
+
+        p {
+          color:  rgb(54, 46, 46);
+          font-size: 120%;
+          margin-bottom: 10px;
+        }
+
+        a {
+          color:  rgb(54, 46, 46);
+          font-size: 120%;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .miidle_section {
+      width: 60%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 5vw;
+        text-align: center;
+      }
+
+      .paragraph_desktop {
+        display: none;
+      }
+
+      .paragraph_mobile {
+        font-size: 3vw;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 55px;
+      }
+
+      .division_logo {
+        border-bottom: 2px solid rgb(239, 81, 60);
+        width: 5%;
+        align-self: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .global_icon {
+        display: none;
+      }
+
+      .global_icon_mobile {
+        background-image: url(./img/cc_global_icon.png);
         background-repeat: no-repeat, repeat;
         background-position: center;
-        background-size: 80%;
-        width: 100%;
-        height: 250px;
-        margin-bottom: 70px;
+        background-size: 100%;
+        width: 500px;
+        height: 200px;
+      }
+
+      .division_middle {
+        border-bottom: 1px solid #d3d3d3;
+        width: 100vw;
+        margin: 50px 0;
+        opacity: 0.4;
+      }
+    }
+
+    .last_section {
+      width: 100vw;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 200%;
+      }
+
+      .division_logo {
+        border-bottom: 2px solid rgb(239, 81, 60);
+        width: 5%;
+        align-self: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 110%;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 55px;
+      }
+
+      .container_past_img {
+        display: none;
+      }
+
+      .container_past_img_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+        height: 100%;
+        margin-bottom: 5%;
+
+        .global_2013_mobile {
+          background-image: url(./img/2013_img.png);
+          background-repeat: no-repeat, repeat;
+          background-size: 100%;
+          width: 100%;
+          height: 300px;
+        }
+
+        .global_2011_mobile {
+          background-image: url(./img/2011_img.png);
+          background-repeat: no-repeat, repeat;
+          background-size: 100%;
+          width: 100%;
+          height: 300px;
+        }
       }
     }
 
@@ -249,10 +624,16 @@
 
       .commons {
         color: rgb(17, 15, 16);
-        font-size: 30px;
+        font-size: 3vw;
         line-height: 16px;
         font-weight: bold;
         margin-right: 50px;
+        width: 30%;
+      }
+
+      .rights {
+        width: 30%;
+        font-size: 2vw;
       }
     }
   }
@@ -288,7 +669,11 @@
         word-spacing: 8px;
       }
 
-      .header_article {
+      .header_article_desktop {
+        display: none;
+      }
+
+      .header_article_mobile {
         display: flex;
         background-color: #fff;
         width: 89%;
@@ -320,40 +705,6 @@
           font-size: 4vw;
           font-weight: bold;
         }
-      }
-    }
-
-    .miidle_section {
-      width: 100vw;
-      height: 100%;
-
-      h2 {
-        font-size: 7vw;
-        text-align: center;
-      }
-
-      p {
-        font-size: 5vw;
-        width: 60%;
-        margin-bottom: 55px;
-      }
-
-      .division_logo {
-        width: 5%;
-        margin-top: 20px;
-        margin-bottom: 30px;
-      }
-
-      .global_icon {
-        background-size: 90%;
-        width: 100%;
-        height: 250px;
-      }
-
-      .division_middle {
-        width: 100%;
-        margin: 50px 0;
-        opacity: 0.4;
       }
     }
 
