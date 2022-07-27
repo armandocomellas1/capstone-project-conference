@@ -18,3 +18,29 @@ hideMenu.addEventListener('click', function() {
   document.getElementsByClassName('abuut_menu_img')[0].style.visibility = "visible";
   document.getElementsByClassName('hide_menu')[0].style.visibility = "hidden";
 })
+
+let getScreenSize = window.innerWidth;
+functionName();
+
+window.addEventListener('resize', functionName);
+function functionName(e) {
+
+  if (e != undefined) {
+    var storeScreenSize = e.currentTarget.screen.availWidth;
+
+  } else {
+    storeScreenSize = getScreenSize;
+  }
+
+  if (storeScreenSize <= 767) {
+    var converToPx = storeScreenSize * .40 + "px";
+    var converToPxSection = storeScreenSize * .53 + "px";
+    var converToGlobalIcon = storeScreenSize * .60 + "px";
+
+    document.getElementsByClassName('global_2013_mobile')[0].style.height = converToPx;
+    document.getElementsByClassName('global_2011_mobile')[0].style.height = converToPx;
+    document.getElementsByClassName('icon_partners')[0].style.height = converToPxSection;
+    document.getElementsByClassName('global_icon_mobile')[0].style.width = converToGlobalIcon;
+
+  }
+}
