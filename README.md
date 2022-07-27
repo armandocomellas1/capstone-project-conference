@@ -27,6 +27,10 @@ Conference page - HTML/CSS & JavaScript project
 
 You can check a live working version of this project here: [live-demo](https://armandocomellas1.github.io/capstone-project-conference/)
 
+## Live video showing the project
+
+You can check a live working version of this project here: [live-demo](https://drive.google.com/file/d/142myMFMnUjq5iIXxvJ3J1TdbiBf5tKVd/view?usp=sharing)
+
 
 ## Getting Started
 
