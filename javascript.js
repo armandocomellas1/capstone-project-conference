@@ -2,6 +2,7 @@ let clickMenu = document.getElementById('menu_expand');
 
 clickMenu.addEventListener('click', function() {
   let storeMenu = document.getElementById('menu_mobile');
+  storeMenu.style.height = "100vh";
   storeMenu.getElementsByTagName('a')[0].style.visibility = "visible";
   storeMenu.getElementsByTagName('a')[1].style.visibility = "visible";
   document.getElementsByClassName('icon_menu')[0].style.visibility = "hidden";
@@ -13,6 +14,7 @@ let hideMenu = document.getElementById('close_menu');
 hideMenu.addEventListener('click', function() {
   document.getElementsByClassName('icon_menu')[0].style.visibility = "visible";
   let storeMenu = document.getElementById('menu_mobile');
+  storeMenu.style.height = "100%";
   storeMenu.getElementsByTagName('a')[0].style.visibility = "hidden";
   storeMenu.getElementsByTagName('a')[1].style.visibility = "hidden";
   document.getElementsByClassName('icon_menu')[0].style.visibility = "visible";
@@ -69,12 +71,11 @@ function functionName(e) {
     storeScreenSize = getScreenSize;
   }
 
-  var converToPx = storeScreenSize * .17 + "px";
   var converToPxSection = storeScreenSize * .53 + "px";
-  var converTofooters = storeScreenSize * .34 + "px";
+  var converTofooters = 250 + (storeScreenSize * .09) + "px";
+  var moreFontSizeSymbol = storeScreenSize * 0.002 + "px";
+  var fontSizeText = "14px";
 
-  document.getElementsByClassName('img_bg_speakers')[0].style.height = converToPx;
-  document.getElementsByClassName('img_bg_footers')[0].style.height = converToPx;
   document.getElementsByClassName('containers_footer')[0].style.height = converTofooters;
 
   converToPxSection = storeScreenSize * .80;
@@ -163,4 +164,7 @@ function functionName(e) {
       insertFeatureData.innerHTML = featureSection;
     }
   }
+
+  document.getElementsByClassName('final_sect_icon')[0].style.top = moreFontSizeSymbol;
+  document.getElementsByClassName('final_sect_Text')[0].style.fontSize = fontSizeText;
 }

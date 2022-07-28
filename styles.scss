@@ -5,7 +5,12 @@
 
 @font-face {
   font-family: 'cocogoose';
-  src: url(/Font/cocogoose-pro.regular.ttf);
+  src: url(/Font/cocogoose/Coocogoose.png);
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url(/Font/lato/Lato-Regular.ttf);
 }
 
 #featured_section_home h6,
@@ -13,7 +18,7 @@
   display: none;
 }
 
-@media (min-width: 768px) and (max-width: 2000px) {
+@media (min-width: 768px) and (max-width: 3000px) {
   .main_container {
     width: 100vw;
     height: 100%;
@@ -45,6 +50,7 @@
           text-decoration: none;
           color: #fff;
           font-size: 12px;
+          font-family: 'lato';
           margin: 0 10px;
         }
 
@@ -63,11 +69,9 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        height: 65px;
+        height: 85px;
 
         .icon_global_summit {
-          background-image: url(./img/global_icon_summit.png);
-          background-repeat: no-repeat, repeat;
           min-width: 15vw;
           min-height: 5vh;
           margin-right: 9%;
@@ -79,6 +83,7 @@
           text-decoration: none;
           color: rgb(131, 124, 124);
           font-size: 1vw;
+          font-family: 'lato';
         }
 
         .menu_under_last {
@@ -88,6 +93,7 @@
           border: 4px solid #ec5242;
           padding: 5px;
           font-size: 1vw;
+          font-family: 'lato';
         }
 
         .color_about {
@@ -115,12 +121,14 @@
         .subtitle_header {
           color: #ec5242;
           font-size: 3vw;
+          font-family: 'lato';
           padding-left: 12%;
         }
 
         h1 {
           color: #ec5242;
           font-size: 4.9vw;
+          font-family: 'lato';
           font-weight: bold;
           padding-left: 12%;
           line-height: 85%;
@@ -146,6 +154,7 @@
         width: 44%;
         text-align: justify;
         font-size: 1vw;
+        font-family: 'lato';
         border: 5px solid #fff;
         background-color: rgb(247, 247, 248);
       }
@@ -157,12 +166,14 @@
         .dates_header {
           color: rgb(37, 37, 37, 0.8);
           font-size: 3vw;
+          font-family: 'lato';
           font-weight: bolder;
           padding-left: 12%;
         }
 
         .subloc_header {
           font-size: 1.5vw;
+          font-family: 'lato';
           color: rgb(90, 90, 90);
           padding-left: 12%;
         }
@@ -280,6 +291,7 @@
       .section_part_one .section_lecture {
         color: #ec5242;
         font-size: 1.3vw;
+        font-family: 'lato';
         font-weight: bold;
         align-self: center;
         text-align: justify;
@@ -288,6 +300,7 @@
       .section_part_one .section_para_one {
         color: #fff;
         font-size: 0.8vw;
+        font-family: 'lato';
         align-self: center;
         text-align: center;
         width: 70%;
@@ -312,7 +325,7 @@
     .section_speakers_desktop {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      background-color: rgb(248, 248, 248);
 
       .speakers_title {
         text-align: center;
@@ -333,6 +346,7 @@
         flex-wrap: wrap;
         justify-content: center;
         margin: 28px 0;
+        background-color: rgb(248, 248, 248);
 
         .img_speaker_one {
           background-image: url(./img/fisrt_speaker.png);
@@ -394,6 +408,7 @@
 
           .first_speak_title {
             font-size: 1.2vw;
+            font-family: 'lato';
             width: 10vw;
             font-weight: bold;
           }
@@ -402,11 +417,13 @@
             color: #ec5242;
             font-style: italic;
             font-size: 1.2vw;
+            font-family: 'lato';
             width: 30vw;
           }
 
           .first_speak_para {
             font-size: 1.1vw;
+            font-family: 'lato';
             width: 29vw;
           }
         }
@@ -428,6 +445,7 @@
 
           .final_sect_Text {
             font-size: 2vw;
+            font-family: 'lato';
           }
 
           .final_sect_icon {
@@ -447,18 +465,23 @@
     .containers_footer {
       display: flex;
       flex-direction: column;
-      height: 500px;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(248, 248, 248);
 
       .img_bg_speakers {
         background-image: url(./img/desktop_spaekers_bg_img.png);
         background-repeat: no-repeat, repeat;
+        background-position: bottom;
         background-size: 100%;
+        height: 100vh;
       }
 
       .img_bg_footers {
         background-image: url(./img/footer_desktop.png);
-        background-repeat: no-repeat, repeat;
+        background-position: top;
         background-size: 100%;
+        height: 100vh;
       }
     }
   }
@@ -480,7 +503,8 @@
 
     .nav_container {
       background-image: url(./img/head_img.png);
-      background-size: 100% 100%;
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat, repeat;
       height: 100%;
 
@@ -490,20 +514,21 @@
         #menu_mobile {
           display: flex;
           flex-direction: column;
-          align-items: flex-end;
+          align-items: center;
+          justify-content: center;
 
           a {
+            font-family: 'cocogoose';
             visibility: hidden;
             text-decoration: none;
             color: #000;
-            margin: 3% 0;
-            font-size: 3.5vw;
+            margin: 5% 0;
+            font-size: 35px;
             z-index: 2;
           }
 
-          a:active {
+          a:hover {
             color: #ec5242;
-            z-index: 2;
           }
         }
 
@@ -601,12 +626,14 @@
         .subtitle_header {
           color: #ec5242;
           font-size: 4.5vw;
+          font-family: 'lato';
           padding-left: 0;
         }
 
         h1 {
           color: #ec5242;
           font-size: 8.5vw;
+          font-family: 'lato';
           padding-left: 0;
           font-weight: bold;
           width: 100%;
@@ -629,6 +656,7 @@
         margin-bottom: 0;
         text-align: justify;
         font-size: 3.3vw;
+        font-family: 'lato';
         border: 4px solid #fff;
         line-height: 40px;
         background-color: rgb(247, 247, 248);
@@ -641,11 +669,13 @@
         .dates_header {
           color: rgb(37, 37, 37, 0.8);
           font-size: 4.6vw;
+          font-family: 'lato';
           font-weight: bolder;
         }
 
         .subloc_header {
           font-size: 3vw;
+          font-family: 'lato';
           color: rgb(90, 90, 90);
         }
       }
@@ -744,6 +774,7 @@
       .section_part_one .section_lecture {
         color: #ec5242;
         font-size: 4vw;
+        font-family: 'lato';
         font-weight: bold;
         align-self: center;
         text-align: justify;
@@ -752,6 +783,7 @@
       .section_part_one .section_para_one {
         color: #fff;
         font-size: 2.9vw;
+        font-family: 'lato';
         align-self: center;
         text-align: justify;
         width: 80%;
@@ -763,6 +795,7 @@
 
       .join_btn {
         font-size: 4vw;
+        font-family: 'lato';
         font-weight: 400;
         color: #f2f2f2;
         background-color: #ec5242;
@@ -821,16 +854,19 @@
 
           .first_speak_title {
             font-size: 4.5vw;
+            font-family: 'lato';
           }
 
           .first_speak_subti {
             color: #ec5242;
             font-style: italic;
             font-size: 2vw;
+            font-family: 'lato';
           }
 
           .first_speak_para {
             font-size: 2vw;
+            font-family: 'lato';
           }
         }
       }
@@ -850,18 +886,20 @@
           justify-content: center;
 
           .final_sect_Text {
-            font-size: 2vw;
+            font-size: 14px;
+            font-family: 'lato';
+            padding-right: 1%;
           }
 
           .final_sect_icon {
             background-image: url(./img/expand_more.png);
             background-repeat: no-repeat, repeat;
             background-position: center;
-            width: 10%;
+            width: 5%;
             height: 30%;
+            padding-left: 1%;
             filter: opacity(0.5) drop-shadow(0 0 0 #ec5242);
             position: relative;
-            right: 2%;
           }
         }
       }

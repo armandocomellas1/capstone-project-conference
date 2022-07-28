@@ -3,7 +3,17 @@
   padding: 0;
 }
 
-@media (min-width: 768px) and (max-width: 2000px) {
+@font-face {
+  font-family: 'cocogoose';
+  src: url(/Font/cocogoose/Coocogoose.png);
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url(/Font/lato/Lato-Regular.ttf);
+}
+
+@media (min-width: 768px) and (max-width: 3000px) {
   .main_container {
     width: 100vw;
     height: 100%;
@@ -22,6 +32,7 @@
       margin-bottom: 50px;
 
       p {
+        font-family: 'lato';
         color: rgb(54, 46, 46);
         font-size: 120%;
         margin-bottom: 10px;
@@ -30,6 +41,7 @@
 
       a {
         color: rgb(54, 46, 46);
+        font-family: 'lato';
         font-size: 120%;
         font-weight: bold;
       }
@@ -39,7 +51,7 @@
       background-image: url(./img/about_bg_desktop.png);
       background-repeat: no-repeat, repeat;
       background-size: 90%;
-      background-position-y: 90px;
+      background-position-y: 100px;
       background-position-x: 30px;
       background-color: rgb(247, 247, 248);
       padding-bottom: 40px;
@@ -64,6 +76,7 @@
             text-decoration: none;
             color: #fff;
             font-size: 12px;
+            font-family: 'lato';
             margin: 0 10px;
           }
 
@@ -84,14 +97,12 @@
           width: 100%;
           margin: 0;
           padding: 0;
-          height: 65px;
+          height: 85px;
           background-color: #fff;
           border-bottom: 2px solid rgb(225, 225, 225);
           box-shadow: 5px 5px 5px rgb(225, 225, 225);
 
           .icon_global_summit {
-            background-image: url(./img/global_icon_summit.png);
-            background-repeat: no-repeat, repeat;
             min-width: 15vw;
             min-height: 5vh;
             margin-right: 9%;
@@ -103,6 +114,7 @@
             text-decoration: none;
             color: rgb(131, 124, 124);
             font-size: 1vw;
+            font-family: 'lato';
           }
 
           .menu_under_last {
@@ -112,6 +124,7 @@
             border: 4px solid #ec5242;
             padding: 5px;
             font-size: 1vw;
+            font-family: 'lato';
           }
 
           .color_about {
@@ -157,6 +170,7 @@
             text-decoration: none;
             color: #000;
             font-size: 3.5vw;
+            font-family: 'lato';
             z-index: 2;
             height: 50%;
             padding-right: 15px;
@@ -172,6 +186,7 @@
       h1 {
         color: #ec331e;
         font-size: 3.4vw;
+        font-family: 'lato';
         font-weight: bold;
         width: 50%;
         text-align: center;
@@ -203,6 +218,7 @@
           padding: 2% 5%;
           text-align: center;
           font-size: 100%;
+          font-family: 'lato';
           line-height: 150%;
           color: rgb(122, 116, 116);
         }
@@ -220,7 +236,9 @@
 
       h2 {
         font-size: 200%;
+        font-family: 'lato';
         text-align: center;
+        color: #272a31;
       }
 
       .paragraph_mobile {
@@ -233,6 +251,7 @@
         text-align: center;
         margin-bottom: 55px;
         font-size: 100%;
+        font-family: 'lato';
         line-height: 100%;
         color: rgb(122, 116, 116);
       }
@@ -275,7 +294,11 @@
       align-items: center;
 
       h2 {
-        font-size: 200%;
+        font-size: 120%;
+        font-family: 'lato';
+        color: #272a31;
+        width: 60%;
+        text-align: center;
       }
 
       .division_logo {
@@ -288,6 +311,7 @@
 
       p {
         font-size: 110%;
+        font-family: 'lato';
         width: 60%;
         margin: 0 auto;
         text-align: center;
@@ -337,9 +361,12 @@
     .footer_desktop {
       background-image: url(./img/about_footer_section.png);
       background-repeat: no-repeat, repeat;
+      background-position: center;
       background-size: 100%;
       width: 100vw;
-      height: 250px;
+      height: 200px;
+      position: relative;
+      bottom: -20px;
     }
   }
 }
@@ -354,6 +381,7 @@
       background-image: url(./img/about_bg_head_good.png);
       background-repeat: no-repeat, repeat;
       background-size: 100%;
+      background-position-y: 21%;
       width: 100vw;
       height: 100%;
       background-color: rgb(247, 247, 248);
@@ -365,7 +393,8 @@
 
       .about_menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
 
         .abuut_menu_img {
           background-image: url(./img/mobile_menu_header.png);
@@ -374,8 +403,9 @@
           background-size: 60%;
           width: 10vw;
           height: 10vh;
-          margin-left: 3.1%;
-          margin-top: 0.5%;
+          position: absolute;
+          top: 0%;
+          left: 2.3%;
         }
 
         .hide_menu {
@@ -394,21 +424,21 @@
         .menu_vertical {
           display: flex;
           flex-direction: column;
+          align-items: center;
+          justify-content: center;
 
           a {
+            font-family: 'cocogoose';
             visibility: hidden;
             text-decoration: none;
             color: #000;
-            font-size: 3.5vw;
+            margin: 50% 0;
+            font-size: 35px;
             z-index: 2;
-            height: 50%;
-            padding-right: 15px;
-            padding-top: 10px;
           }
 
-          a:active {
+          a:hover {
             color: #ec5242;
-            z-index: 2;
           }
         }
       }
@@ -420,14 +450,16 @@
       .subtitle_header {
         color: #ec5242;
         font-size: 4.5vw;
+        font-family: 'lato';
         display: flex;
         justify-content: center;
-        margin-top: 10%;
+        margin-top: 1%;
       }
 
       h1 {
         color: #ec331e;
         font-size: 7.6vw;
+        font-family: 'lato';
         font-weight: bold;
         width: 90%;
         text-align: center;
@@ -452,6 +484,7 @@
           padding: 3.5% 2.5%;
           text-align: center;
           font-size: 165%;
+          font-family: 'lato';
           line-height: 120%;
           color: rgb(85, 73, 73);
         }
@@ -468,12 +501,14 @@
         p {
           color: rgb(54, 46, 46);
           font-size: 120%;
+          font-family: 'lato';
           margin-bottom: 10px;
         }
 
         .link_last_header {
           color: rgb(54, 46, 46);
           font-size: 120%;
+          font-family: 'lato';
           font-weight: bold;
         }
       }
@@ -490,7 +525,9 @@
 
       h2 {
         font-size: 5vw;
+        font-family: 'lato';
         text-align: center;
+        color: #272a31;
       }
 
       .paragraph_desktop {
@@ -499,6 +536,7 @@
 
       .paragraph_mobile {
         font-size: 3vw;
+        font-family: 'lato';
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -543,8 +581,11 @@
       align-items: center;
 
       h2 {
-        font-size: 5vw;
+        font-size: 2.2vw;
+        width: 60%;
+        font-family: 'lato';
         text-align: center;
+        color: #272a31;
       }
 
       .division_logo {
@@ -556,8 +597,9 @@
       }
 
       .para_last_section {
-        font-size: 110%;
-        width: 60%;
+        font-size: 2.4vw;
+        font-family: 'lato';
+        width: 70%;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 55px;
@@ -607,18 +649,16 @@
         background-size: 100%;
         width: 100%;
         height: 40vh;
-        margin-bottom: 70px;
       }
     }
 
     .footer_section {
       width: 100vw;
-      height: 100%;
+      height: 100px;
       background-color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 50px;
 
       .cc_logo_last {
         background-image: url(./img/commons_logo.png);
@@ -629,22 +669,22 @@
 
       .commons {
         color: rgb(17, 15, 16);
-        font-size: 3vw;
-        line-height: 16px;
+        line-height: 15px;
         font-weight: bold;
-        margin-right: 50px;
+        display: flex;
         width: 30%;
       }
 
       .rights {
-        width: 30%;
-        font-size: 2vw;
+        width: 25%;
+        display: flex;
+        justify-content: center;
       }
     }
   }
 }
 
-@media (min-width: 100px) and (max-width: 590px) {
+@media (min-width: 100px) and (max-width: 300px) {
   .main_container {
     width: 100vw;
     height: 100%;
@@ -655,17 +695,10 @@
       height: 100%;
       padding-bottom: 40px;
 
-      .subtitle_header {
-        color: #ec5242;
-        font-size: 4.5vw;
-        display: flex;
-        justify-content: center;
-        margin-top: 10%;
-      }
-
       h1 {
         color: #ec331e;
         font-size: 7.6vw;
+        font-family: 'cocogoose';
         font-weight: bold;
         width: 90%;
         text-align: center;
@@ -690,23 +723,25 @@
           padding: 3.5% 2.5%;
           text-align: center;
           font-size: 4vw;
+          font-family: 'lato';
           line-height: 120%;
           color: rgb(85, 73, 73);
         }
       }
 
       .last_header_part {
-        display: flex;
+        width: 55%;
+        margin: 30px auto;
 
         p {
-          color: rgb(54, 46, 46);
-          font-size: 4vw;
+          font-size: 80%;
+          font-family: 'lato';
           margin-bottom: 10px;
         }
 
-        a {
-          color: rgb(54, 46, 46);
-          font-size: 4vw;
+        .link_last_header {
+          font-size: 100%;
+          font-family: 'lato';
           font-weight: bold;
         }
       }
@@ -721,29 +756,6 @@
         width: 100%;
         height: 30vh;
         margin-bottom: 10px;
-      }
-    }
-
-    .footer_section {
-      width: 100vw;
-      height: 100%;
-      background-color: #fff;
-      margin-bottom: 50px;
-
-      .cc_logo_last {
-        width: 20vw;
-        height: 30px;
-      }
-
-      .commons {
-        font-size: 5vw;
-        line-height: 18px;
-        font-weight: bold;
-        margin-right: 30px;
-      }
-
-      .rights {
-        font-size: 5vw;
       }
     }
   }
