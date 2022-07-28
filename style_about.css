@@ -7,19 +7,23 @@
   font-family: "cocogoose";
   src: url(/Font/cocogoose/Coocogoose.png);
 }
+
 @font-face {
-  font-family: "lato";
+  font-family: url(/Font/lato/Lato-Regular.ttf);
   src: url(/Font/lato/Lato-Regular.ttf);
 }
+
 @media (min-width: 768px) and (max-width: 3000px) {
   .main_container {
     width: 100vw;
     height: 100%;
     overflow: hidden;
   }
+
   .main_container #menu_expand {
     display: none;
   }
+
   .main_container .last_header_part {
     display: flex;
     flex-direction: column;
@@ -28,19 +32,22 @@
     width: 100%;
     margin-bottom: 50px;
   }
+
   .main_container .last_header_part p {
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     color: rgb(54, 46, 46);
     font-size: 120%;
     margin-bottom: 10px;
     margin-top: 10px;
   }
+
   .main_container .last_header_part a {
     color: rgb(54, 46, 46);
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     font-size: 120%;
     font-weight: bold;
   }
+
   .main_container .header_part {
     background-image: url(./img/about_bg_desktop.png);
     background-repeat: no-repeat, repeat;
@@ -50,10 +57,12 @@
     background-color: rgb(247, 247, 248);
     padding-bottom: 40px;
   }
+
   .main_container .header_part .desktop_version_about {
     display: flex;
     flex-direction: column;
   }
+
   .main_container .header_part .desktop_version_about .top_header {
     display: flex;
     justify-content: flex-end;
@@ -66,21 +75,25 @@
     padding-top: 0;
     padding-right: 12.3%;
   }
+
   .main_container .header_part .desktop_version_about .top_header a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     margin: 0 10px;
   }
+
   .main_container .header_part .desktop_version_about .top_header .icon_face {
     color: #fff;
     margin-right: 1%;
   }
+
   .main_container .header_part .desktop_version_about .top_header .icon_twitter {
     color: #fff;
     margin-right: 1%;
   }
+
   .main_container .header_part .desktop_version_about .main_nav {
     display: flex;
     align-items: center;
@@ -92,19 +105,22 @@
     border-bottom: 2px solid rgb(225, 225, 225);
     box-shadow: 5px 5px 5px rgb(225, 225, 225);
   }
+
   .main_container .header_part .desktop_version_about .main_nav .icon_global_summit {
     min-width: 15vw;
     min-height: 5vh;
     margin-right: 9%;
     margin-left: 20%;
   }
+
   .main_container .header_part .desktop_version_about .main_nav .menu_under {
     margin: 0 2%;
     text-decoration: none;
     color: rgb(131, 124, 124);
     font-size: 1vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
   }
+
   .main_container .header_part .desktop_version_about .main_nav .menu_under_last {
     margin-left: 3.5%;
     text-decoration: none;
@@ -112,15 +128,18 @@
     border: 4px solid #ec5242;
     padding: 5px;
     font-size: 1vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
   }
+
   .main_container .header_part .desktop_version_about .main_nav .color_about {
     color: #ec5242;
   }
+
   .main_container .header_part .about_menu {
     display: flex;
     justify-content: space-between;
   }
+
   .main_container .header_part .about_menu .abuut_menu_img {
     background-image: url(./img/mobile_menu_header.png);
     background-repeat: no-repeat, repeat;
@@ -131,6 +150,7 @@
     margin-left: 3.1%;
     margin-top: 0.5%;
   }
+
   .main_container .header_part .about_menu .hide_menu {
     background-image: url(./img/disable_close.png);
     background-repeat: no-repeat, repeat;
@@ -143,28 +163,32 @@
     left: 2.3%;
     visibility: hidden;
   }
+
   .main_container .header_part .about_menu .menu_vertical {
     display: flex;
     flex-direction: column;
   }
+
   .main_container .header_part .about_menu .menu_vertical a {
     visibility: hidden;
     text-decoration: none;
     color: #000;
     font-size: 3.5vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     z-index: 2;
     height: 50%;
     padding-right: 15px;
     padding-top: 10px;
   }
+
   .main_container .header_part .subtitle_header {
     display: none;
   }
+
   .main_container .header_part h1 {
     color: #ec331e;
     font-size: 3.4vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     font-weight: bold;
     width: 50%;
     text-align: center;
@@ -172,14 +196,17 @@
     word-spacing: 8px;
     margin-top: 6%;
   }
+
   .main_container .header_part .division_logo_header {
     border-bottom: 2px solid rgb(239, 81, 60);
     width: 3%;
     margin: 20px auto;
   }
+
   .main_container .header_part .header_article_mobile {
     display: none;
   }
+
   .main_container .header_part .header_article_desktop {
     display: flex;
     background-color: #fff;
@@ -189,14 +216,16 @@
     border: 1px solid #d3d3d3;
     height: 100%;
   }
+
   .main_container .header_part .header_article_desktop h4 {
     padding: 2% 5%;
     text-align: center;
     font-size: 100%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     line-height: 150%;
     color: rgb(122, 116, 116);
   }
+
   .main_container .miidle_section {
     width: 100vw;
     height: 100%;
@@ -206,25 +235,29 @@
     align-items: center;
     margin-top: 50px;
   }
+
   .main_container .miidle_section h2 {
     font-size: 200%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     text-align: center;
     color: #272a31;
   }
+
   .main_container .miidle_section .paragraph_mobile {
     display: none;
   }
+
   .main_container .miidle_section .paragraph_desktop {
     width: 45%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 55px;
     font-size: 100%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     line-height: 100%;
     color: rgb(122, 116, 116);
   }
+
   .main_container .miidle_section .division_logo {
     border-bottom: 2px solid rgb(239, 81, 60);
     width: 5%;
@@ -232,9 +265,11 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
   .main_container .miidle_section .global_icon_mobile {
     display: none;
   }
+
   .main_container .miidle_section .global_icon {
     background-image: url(./img/cc_global_icon.png);
     background-repeat: no-repeat, repeat;
@@ -243,12 +278,14 @@
     width: 100%;
     height: 250px;
   }
+
   .main_container .miidle_section .division_middle {
     border-bottom: 1px solid #d3d3d3;
     width: 100%;
     margin: 50px 0;
     opacity: 0.4;
   }
+
   .main_container .last_section {
     width: 100vw;
     height: 100%;
@@ -257,13 +294,15 @@
     flex-direction: column;
     align-items: center;
   }
+
   .main_container .last_section h2 {
     font-size: 120%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     color: #272a31;
     width: 60%;
     text-align: center;
   }
+
   .main_container .last_section .division_logo {
     border-bottom: 2px solid rgb(239, 81, 60);
     width: 5%;
@@ -271,17 +310,20 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
   .main_container .last_section p {
     font-size: 110%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     width: 60%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 55px;
   }
+
   .main_container .last_section .container_past_img_mobile {
     display: none;
   }
+
   .main_container .last_section .container_past_img {
     display: flex;
     width: 100%;
@@ -289,6 +331,7 @@
     justify-content: center;
     margin-bottom: 5%;
   }
+
   .main_container .last_section .container_past_img .global_2013 {
     background-image: url(./img/2013_img.png);
     background-repeat: no-repeat, repeat;
@@ -298,6 +341,7 @@
     height: 250px;
     margin-right: 1%;
   }
+
   .main_container .last_section .container_past_img .global_2011 {
     background-image: url(./img/2011_img.png);
     background-repeat: no-repeat, repeat;
@@ -306,12 +350,15 @@
     width: 40vw;
     height: 250px;
   }
+
   .main_container .section_partners {
     display: none;
   }
+
   .main_container .footer_section {
     display: none;
   }
+
   .main_container .footer_desktop {
     background-image: url(./img/about_footer_section.png);
     background-repeat: no-repeat, repeat;
@@ -323,12 +370,14 @@
     bottom: -20px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .main_container {
     width: 100vw;
     height: 100%;
     overflow: hidden;
   }
+
   .main_container .header_part {
     background-image: url(./img/about_bg_head_good.png);
     background-repeat: no-repeat, repeat;
@@ -339,14 +388,17 @@
     background-color: rgb(247, 247, 248);
     padding-bottom: 40px;
   }
+
   .main_container .header_part .desktop_version_about {
     display: none;
   }
+
   .main_container .header_part .about_menu {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .main_container .header_part .about_menu .abuut_menu_img {
     background-image: url(./img/mobile_menu_header.png);
     background-repeat: no-repeat, repeat;
@@ -358,6 +410,7 @@
     top: 0%;
     left: 2.3%;
   }
+
   .main_container .header_part .about_menu .hide_menu {
     background-image: url(./img/disable_close.png);
     background-repeat: no-repeat, repeat;
@@ -370,14 +423,16 @@
     left: 2.3%;
     visibility: hidden;
   }
+
   .main_container .header_part .about_menu .menu_vertical {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .main_container .header_part .about_menu .menu_vertical a {
-    font-family: "cocogoose";
+    font-family: url(/Font/cocogoose/Coocogoose.png);
     visibility: hidden;
     text-decoration: none;
     color: #000;
@@ -385,33 +440,39 @@
     font-size: 35px;
     z-index: 2;
   }
+
   .main_container .header_part .about_menu .menu_vertical a:hover {
     color: #ec5242;
   }
+
   .main_container .header_part .division_logo_header {
     display: none;
   }
+
   .main_container .header_part .subtitle_header {
     color: #ec5242;
     font-size: 4.5vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     display: flex;
     justify-content: center;
     margin-top: 1%;
   }
+
   .main_container .header_part h1 {
     color: #ec331e;
     font-size: 7.6vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     font-weight: bold;
     width: 90%;
     text-align: center;
     margin: 4% auto;
     word-spacing: 8px;
   }
+
   .main_container .header_part .header_article_desktop {
     display: none;
   }
+
   .main_container .header_part .header_article_mobile {
     display: flex;
     background-color: #fff;
@@ -421,14 +482,16 @@
     border: 1px solid #d3d3d3;
     height: 25%;
   }
+
   .main_container .header_part .header_article_mobile h4 {
     padding: 3.5% 2.5%;
     text-align: center;
     font-size: 165%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     line-height: 120%;
     color: rgb(85, 73, 73);
   }
+
   .main_container .header_part .last_header_part {
     display: flex;
     flex-direction: column;
@@ -437,18 +500,21 @@
     margin: 30px auto;
     text-align: center;
   }
+
   .main_container .header_part .last_header_part p {
     color: rgb(54, 46, 46);
     font-size: 120%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     margin-bottom: 10px;
   }
+
   .main_container .header_part .last_header_part .link_last_header {
     color: rgb(54, 46, 46);
     font-size: 120%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     font-weight: bold;
   }
+
   .main_container .miidle_section {
     width: 60%;
     height: 100%;
@@ -458,23 +524,27 @@
     align-items: center;
     margin: 0 auto;
   }
+
   .main_container .miidle_section h2 {
     font-size: 5vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     text-align: center;
     color: #272a31;
   }
+
   .main_container .miidle_section .paragraph_desktop {
     display: none;
   }
+
   .main_container .miidle_section .paragraph_mobile {
     font-size: 3vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 55px;
   }
+
   .main_container .miidle_section .division_logo {
     border-bottom: 2px solid rgb(239, 81, 60);
     width: 5%;
@@ -482,9 +552,11 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
   .main_container .miidle_section .global_icon {
     display: none;
   }
+
   .main_container .miidle_section .global_icon_mobile {
     background-image: url(./img/cc_global_icon.png);
     background-repeat: no-repeat, repeat;
@@ -493,12 +565,14 @@
     width: 500px;
     height: 200px;
   }
+
   .main_container .miidle_section .division_middle {
     border-bottom: 1px solid #d3d3d3;
     width: 100vw;
     margin: 50px 0;
     opacity: 0.4;
   }
+
   .main_container .last_section {
     width: 100vw;
     height: 100%;
@@ -507,13 +581,15 @@
     flex-direction: column;
     align-items: center;
   }
+
   .main_container .last_section h2 {
     font-size: 2.2vw;
     width: 60%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     text-align: center;
     color: #272a31;
   }
+
   .main_container .last_section .division_logo {
     border-bottom: 2px solid rgb(239, 81, 60);
     width: 5%;
@@ -521,17 +597,20 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
   .main_container .last_section .para_last_section {
     font-size: 2.4vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     width: 70%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 55px;
   }
+
   .main_container .last_section .container_past_img {
     display: none;
   }
+
   .main_container .last_section .container_past_img_mobile {
     display: flex;
     flex-direction: column;
@@ -540,6 +619,7 @@
     height: 100%;
     margin-bottom: 5%;
   }
+
   .main_container .last_section .container_past_img_mobile .global_2013_mobile {
     background-image: url(./img/2013_img.png);
     background-repeat: no-repeat, repeat;
@@ -547,6 +627,7 @@
     width: 100%;
     height: 300px;
   }
+
   .main_container .last_section .container_past_img_mobile .global_2011_mobile {
     background-image: url(./img/2011_img.png);
     background-repeat: no-repeat, repeat;
@@ -554,6 +635,7 @@
     width: 100%;
     height: 300px;
   }
+
   .main_container .section_partners {
     width: 100vw;
     height: 100%;
@@ -561,6 +643,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   .main_container .section_partners .icon_partners {
     background-image: url(./img/partners_logo.png);
     background-repeat: no-repeat, repeat;
@@ -569,6 +652,7 @@
     width: 100%;
     height: 40vh;
   }
+
   .main_container .footer_section {
     width: 100vw;
     height: 100px;
@@ -577,12 +661,14 @@
     justify-content: center;
     align-items: center;
   }
+
   .main_container .footer_section .cc_logo_last {
     background-image: url(./img/commons_logo.png);
     background-repeat: no-repeat, repeat;
     width: 30px;
     height: 30px;
   }
+
   .main_container .footer_section .commons {
     color: rgb(17, 15, 16);
     line-height: 15px;
@@ -590,36 +676,42 @@
     display: flex;
     width: 30%;
   }
+
   .main_container .footer_section .rights {
     width: 25%;
     display: flex;
     justify-content: center;
   }
 }
+
 @media (min-width: 100px) and (max-width: 300px) {
   .main_container {
     width: 100vw;
     height: 100%;
     overflow: hidden;
   }
+
   .main_container .header_part {
     width: 100vw;
     height: 100%;
     padding-bottom: 40px;
   }
+
   .main_container .header_part h1 {
     color: #ec331e;
     font-size: 7.6vw;
-    font-family: "cocogoose";
+    font-family: url(/Font/cocogoose/Coocogoose.png);
     font-weight: bold;
     width: 90%;
     text-align: center;
     margin: 4% auto;
     word-spacing: 8px;
   }
+
   .main_container .header_part .header_article_desktop {
     display: none;
   }
+
   .main_container .header_part .header_article_mobile {
     display: flex;
     background-color: #fff;
@@ -629,32 +721,38 @@
     border: 1px solid #d3d3d3;
     height: auto;
   }
+
   .main_container .header_part .header_article_mobile h4 {
     padding: 3.5% 2.5%;
     text-align: center;
     font-size: 4vw;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     line-height: 120%;
     color: rgb(85, 73, 73);
   }
+
   .main_container .header_part .last_header_part {
     width: 55%;
     margin: 30px auto;
   }
+
   .main_container .header_part .last_header_part p {
     font-size: 80%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     margin-bottom: 10px;
   }
+
   .main_container .header_part .last_header_part .link_last_header {
     font-size: 100%;
-    font-family: "lato";
+    font-family: url(/Font/lato/Lato-Regular.ttf);
     font-weight: bold;
   }
+
   .main_container .section_partners {
     width: 100vw;
     height: 100%;
   }
+
   .main_container .section_partners .icon_partners {
     background-size: 100%;
     width: 100%;
@@ -662,5 +760,3 @@
     margin-bottom: 10px;
   }
 }
-
-/*# sourceMappingURL=style_about.css.map */

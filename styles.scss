@@ -3,13 +3,16 @@
   padding: 0;
 }
 
+$lato: url(/Font/lato/Lato-Regular.ttf);
+$cocogoose: url(/Font/cocogoose/Coocogoose.png);
+
 @font-face {
   font-family: 'cocogoose';
   src: url(/Font/cocogoose/Coocogoose.png);
 }
 
 @font-face {
-  font-family: 'lato';
+  font-family: $lato;
   src: url(/Font/lato/Lato-Regular.ttf);
 }
 
@@ -50,7 +53,7 @@
           text-decoration: none;
           color: #fff;
           font-size: 12px;
-          font-family: 'lato';
+          font-family: $lato;
           margin: 0 10px;
         }
 
@@ -83,7 +86,7 @@
           text-decoration: none;
           color: rgb(131, 124, 124);
           font-size: 1vw;
-          font-family: 'lato';
+          font-family: $lato;
         }
 
         .menu_under_last {
@@ -93,7 +96,7 @@
           border: 4px solid #ec5242;
           padding: 5px;
           font-size: 1vw;
-          font-family: 'lato';
+          font-family: $lato;
         }
 
         .color_about {
@@ -121,14 +124,14 @@
         .subtitle_header {
           color: #ec5242;
           font-size: 3vw;
-          font-family: 'lato';
+          font-family: $lato;
           padding-left: 12%;
         }
 
         h1 {
           color: #ec5242;
           font-size: 4.9vw;
-          font-family: 'lato';
+          font-family: $lato;
           font-weight: bold;
           padding-left: 12%;
           line-height: 85%;
@@ -154,7 +157,7 @@
         width: 44%;
         text-align: justify;
         font-size: 1vw;
-        font-family: 'lato';
+        font-family: $lato;
         border: 5px solid #fff;
         background-color: rgb(247, 247, 248);
       }
@@ -166,14 +169,14 @@
         .dates_header {
           color: rgb(37, 37, 37, 0.8);
           font-size: 3vw;
-          font-family: 'lato';
+          font-family: $lato;
           font-weight: bolder;
           padding-left: 12%;
         }
 
         .subloc_header {
           font-size: 1.5vw;
-          font-family: 'lato';
+          font-family: $lato;
           color: rgb(90, 90, 90);
           padding-left: 12%;
         }
@@ -291,7 +294,7 @@
       .section_part_one .section_lecture {
         color: #ec5242;
         font-size: 1.3vw;
-        font-family: 'lato';
+        font-family: $lato;
         font-weight: bold;
         align-self: center;
         text-align: justify;
@@ -300,7 +303,7 @@
       .section_part_one .section_para_one {
         color: #fff;
         font-size: 0.8vw;
-        font-family: 'lato';
+        font-family: $lato;
         align-self: center;
         text-align: center;
         width: 70%;
@@ -408,7 +411,7 @@
 
           .first_speak_title {
             font-size: 1.2vw;
-            font-family: 'lato';
+            font-family: $lato;
             width: 10vw;
             font-weight: bold;
           }
@@ -417,13 +420,13 @@
             color: #ec5242;
             font-style: italic;
             font-size: 1.2vw;
-            font-family: 'lato';
+            font-family: $lato;
             width: 30vw;
           }
 
           .first_speak_para {
             font-size: 1.1vw;
-            font-family: 'lato';
+            font-family: $lato;
             width: 29vw;
           }
         }
@@ -445,7 +448,7 @@
 
           .final_sect_Text {
             font-size: 2vw;
-            font-family: 'lato';
+            font-family: $lato;
           }
 
           .final_sect_icon {
@@ -518,7 +521,7 @@
           justify-content: center;
 
           a {
-            font-family: 'cocogoose';
+            font-family: $cocogoose;
             visibility: hidden;
             text-decoration: none;
             color: #000;
@@ -626,14 +629,14 @@
         .subtitle_header {
           color: #ec5242;
           font-size: 4.5vw;
-          font-family: 'lato';
+          font-family: $lato;
           padding-left: 0;
         }
 
         h1 {
           color: #ec5242;
           font-size: 8.5vw;
-          font-family: 'lato';
+          font-family: $lato;
           padding-left: 0;
           font-weight: bold;
           width: 100%;
@@ -656,7 +659,7 @@
         margin-bottom: 0;
         text-align: justify;
         font-size: 3.3vw;
-        font-family: 'lato';
+        font-family: $lato;
         border: 4px solid #fff;
         line-height: 40px;
         background-color: rgb(247, 247, 248);
@@ -669,13 +672,13 @@
         .dates_header {
           color: rgb(37, 37, 37, 0.8);
           font-size: 4.6vw;
-          font-family: 'lato';
+          font-family: $lato;
           font-weight: bolder;
         }
 
         .subloc_header {
           font-size: 3vw;
-          font-family: 'lato';
+          font-family: $lato;
           color: rgb(90, 90, 90);
         }
       }
@@ -774,7 +777,7 @@
       .section_part_one .section_lecture {
         color: #ec5242;
         font-size: 4vw;
-        font-family: 'lato';
+        font-family: $lato;
         font-weight: bold;
         align-self: center;
         text-align: justify;
@@ -783,7 +786,7 @@
       .section_part_one .section_para_one {
         color: #fff;
         font-size: 2.9vw;
-        font-family: 'lato';
+        font-family: $lato;
         align-self: center;
         text-align: justify;
         width: 80%;
@@ -795,7 +798,7 @@
 
       .join_btn {
         font-size: 4vw;
-        font-family: 'lato';
+        font-family: $lato;
         font-weight: 400;
         color: #f2f2f2;
         background-color: #ec5242;
@@ -854,19 +857,19 @@
 
           .first_speak_title {
             font-size: 4.5vw;
-            font-family: 'lato';
+            font-family: $lato;
           }
 
           .first_speak_subti {
             color: #ec5242;
             font-style: italic;
             font-size: 2vw;
-            font-family: 'lato';
+            font-family: $lato;
           }
 
           .first_speak_para {
             font-size: 2vw;
-            font-family: 'lato';
+            font-family: $lato;
           }
         }
       }
@@ -887,7 +890,7 @@
 
           .final_sect_Text {
             font-size: 14px;
-            font-family: 'lato';
+            font-family: $lato;
             padding-right: 1%;
           }
 
