@@ -75,7 +75,7 @@ function functionName(e) {
   var converTofooters = 250 + (storeScreenSize * .2) + "px";
   var moreFontSizeSymbol = storeScreenSize * 0.002 + "px";
   var fontSizeText = "14px";
-  var footersSizing = 29 + "vh";
+  var footersSizing = 29 * (storeScreenSize/1800) + "vh";
 
   document.getElementsByClassName('containers_footer')[0].style.height = footersSizing;
   // document.getElementsByClassName('img_bg_speakers')[0].style.height = footersSizing;
