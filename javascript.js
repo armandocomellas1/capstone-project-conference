@@ -75,12 +75,6 @@ function functionName(e) {
   var moreFontSizeSymbol = (storeScreenSize * 0.002) + "px";
   var fontSizeText = "14px";
 
-  var footersSizing = 65 + "vh";
-
-  document.getElementsByClassName('containers_footer')[0].style.height = footersSizing;
-  // document.getElementsByClassName('img_bg_speakers')[0].style.height = footersSizing;
-  // document.getElementsByClassName('img_bg_footers')[0].style.height = footersSizing;
-
   converToPxSection = storeScreenSize * .80;
   document.getElementsByClassName('section_speakers_desktop')[0].style.height = converToPxSection;
 
