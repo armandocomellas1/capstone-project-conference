@@ -89,7 +89,6 @@ body {
     background-image: url(./img/header.png);
     background-repeat: no-repeat, repeat;
     background-size: 100%;
-    background-position-y: 30px;
     width: 100vw;
     height: 100%;
     padding: 0 3%;
@@ -133,6 +132,8 @@ body {
     height: 110px;
     width: 44%;
     text-align: center;
+    display: flex;
+    align-items: center;
     font-size: 1vw;
     font-family: "lato";
     border: 5px solid #fff;

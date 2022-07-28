@@ -72,10 +72,10 @@ function functionName(e) {
   }
 
   var converToPxSection = storeScreenSize * .53 + "px";
-  var converTofooters = 250 + (storeScreenSize * .2) + "px";
-  var moreFontSizeSymbol = storeScreenSize * 0.002 + "px";
+  var moreFontSizeSymbol = (storeScreenSize * 0.002) + "px";
   var fontSizeText = "14px";
-  var footersSizing = 29 * (storeScreenSize/1800) + "vh";
+
+  var footersSizing = 65 + "vh";
 
   document.getElementsByClassName('containers_footer')[0].style.height = footersSizing;
   // document.getElementsByClassName('img_bg_speakers')[0].style.height = footersSizing;
@@ -116,6 +116,8 @@ function functionName(e) {
 
       let insertFeatureData = document.getElementById('featured_section_home');
       insertFeatureData.innerHTML = featureSection;
+      document.getElementsByClassName('final_sect_icon')[0].style.top = moreFontSizeSymbol;
+      document.getElementsByClassName('final_sect_Text')[0].style.fontSize = fontSizeText;
     }
   } else if (storeScreenSize >= 768) {
 
@@ -167,7 +169,4 @@ function functionName(e) {
       insertFeatureData.innerHTML = featureSection;
     }
   }
-
-  document.getElementsByClassName('final_sect_icon')[0].style.top = moreFontSizeSymbol;
-  document.getElementsByClassName('final_sect_Text')[0].style.fontSize = fontSizeText;
 }
