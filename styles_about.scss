@@ -3,17 +3,8 @@
   padding: 0;
 }
 
-$lato: url(/Font/lato/Lato-Regular.ttf);
-$cocogoose: url(/Font/cocogoose/Coocogoose.png);
-
-@font-face {
-  font-family: 'cocogoose';
-  src: url(/Font/cocogoose/Coocogoose.png);
-}
-
-@font-face {
-  font-family: $lato;
-  src: url(/Font/lato/Lato-Regular.ttf);
+body {
+  font-family: 'cocogoose', 'lato';
 }
 
 @media (min-width: 768px) and (max-width: 3000px) {
@@ -35,7 +26,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
       margin-bottom: 50px;
 
       p {
-        font-family: $lato;
+        font-family: 'lato';
         color: rgb(54, 46, 46);
         font-size: 120%;
         margin-bottom: 10px;
@@ -44,7 +35,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
 
       a {
         color: rgb(54, 46, 46);
-        font-family: $lato;
+        font-family: 'lato';
         font-size: 120%;
         font-weight: bold;
       }
@@ -79,7 +70,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
             text-decoration: none;
             color: #fff;
             font-size: 12px;
-            font-family: $lato;
+            font-family: 'lato';
             margin: 0 10px;
           }
 
@@ -117,7 +108,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
             text-decoration: none;
             color: rgb(131, 124, 124);
             font-size: 1vw;
-            font-family: $lato;
+            font-family: 'lato';
           }
 
           .menu_under_last {
@@ -127,7 +118,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
             border: 4px solid #ec5242;
             padding: 5px;
             font-size: 1vw;
-            font-family: $lato;
+            font-family: 'lato';
           }
 
           .color_about {
@@ -173,7 +164,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
             text-decoration: none;
             color: #000;
             font-size: 3.5vw;
-            font-family: $lato;
+            font-family: 'lato';
             z-index: 2;
             height: 50%;
             padding-right: 15px;
@@ -189,7 +180,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
       h1 {
         color: #ec331e;
         font-size: 3.4vw;
-        font-family: $lato;
+        font-family: 'lato';
         font-weight: bold;
         width: 50%;
         text-align: center;
@@ -221,7 +212,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
           padding: 2% 5%;
           text-align: center;
           font-size: 100%;
-          font-family: $lato;
+          font-family: 'lato';
           line-height: 150%;
           color: rgb(122, 116, 116);
         }
@@ -239,7 +230,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
 
       h2 {
         font-size: 200%;
-        font-family: $lato;
+        font-family: 'lato';
         text-align: center;
         color: #272a31;
       }
@@ -254,7 +245,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
         text-align: center;
         margin-bottom: 55px;
         font-size: 100%;
-        font-family: $lato;
+        font-family: 'lato';
         line-height: 100%;
         color: rgb(122, 116, 116);
       }
@@ -298,7 +289,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
 
       h2 {
         font-size: 120%;
-        font-family: $lato;
+        font-family: 'lato';
         color: #272a31;
         width: 60%;
         text-align: center;
@@ -314,7 +305,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
 
       p {
         font-size: 110%;
-        font-family: $lato;
+        font-family: 'lato';
         width: 60%;
         margin: 0 auto;
         text-align: center;
@@ -431,7 +422,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
           justify-content: center;
 
           a {
-            font-family: $cocogoose;
+            font-family: 'cocogoose';
             visibility: hidden;
             text-decoration: none;
             color: #000;
@@ -453,7 +444,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
       .subtitle_header {
         color: #ec5242;
         font-size: 4.5vw;
-        font-family: $lato;
+        font-family: 'lato';
         display: flex;
         justify-content: center;
         margin-top: 1%;
@@ -462,7 +453,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
       h1 {
         color: #ec331e;
         font-size: 7.6vw;
-        font-family: $lato;
+        font-family: 'lato';
         font-weight: bold;
         width: 90%;
         text-align: center;
@@ -487,7 +478,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
           padding: 3.5% 2.5%;
           text-align: center;
           font-size: 165%;
-          font-family: $lato;
+          font-family: 'lato';
           line-height: 120%;
           color: rgb(85, 73, 73);
         }
@@ -504,14 +495,14 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
         p {
           color: rgb(54, 46, 46);
           font-size: 120%;
-          font-family: $lato;
+          font-family: 'lato';
           margin-bottom: 10px;
         }
 
         .link_last_header {
           color: rgb(54, 46, 46);
           font-size: 120%;
-          font-family: $lato;
+          font-family: 'lato';
           font-weight: bold;
         }
       }
@@ -528,7 +519,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
 
       h2 {
         font-size: 5vw;
-        font-family: $lato;
+        font-family: 'lato';
         text-align: center;
         color: #272a31;
       }
@@ -539,7 +530,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
 
       .paragraph_mobile {
         font-size: 3vw;
-        font-family: $lato;
+        font-family: 'lato';
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -586,7 +577,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
       h2 {
         font-size: 2.2vw;
         width: 60%;
-        font-family: $lato;
+        font-family: 'lato';
         text-align: center;
         color: #272a31;
       }
@@ -601,7 +592,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
 
       .para_last_section {
         font-size: 2.4vw;
-        font-family: $lato;
+        font-family: 'lato';
         width: 70%;
         margin: 0 auto;
         text-align: center;
@@ -701,7 +692,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
       h1 {
         color: #ec331e;
         font-size: 7.6vw;
-        font-family: $cocogoose;
+        font-family: 'cocogoose';
         font-weight: bold;
         width: 90%;
         text-align: center;
@@ -726,7 +717,7 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
           padding: 3.5% 2.5%;
           text-align: center;
           font-size: 4vw;
-          font-family: $lato;
+          font-family: 'lato';
           line-height: 120%;
           color: rgb(85, 73, 73);
         }
@@ -738,13 +729,13 @@ $cocogoose: url(/Font/cocogoose/Coocogoose.png);
 
         p {
           font-size: 80%;
-          font-family: $lato;
+          font-family: 'lato';
           margin-bottom: 10px;
         }
 
         .link_last_header {
           font-size: 100%;
-          font-family: $lato;
+          font-family: 'lato';
           font-weight: bold;
         }
       }
