@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style_index.css">
   <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
-  <title>Armando's web development course</title>
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Armando's web development conference</title>
 </head>
 <body>
   <div class="container-fluid main_container">
     <nav class="row nav_container">
       <div class="col-12 special">
-        <div id="menu_mobile">
+        <div id="menu_mobile" class="menu_mobile_expand">
           <a href="./index.html">Home</a>
           <a href="./about.html">About</a>
         </div>
@@ -23,25 +25,43 @@
         <div class="bg_img_x"></div>
       </div>
     </nav>
+    <nav class="row desktop_version">
+      <div class="top_header">
+        <a href="" class="fa fa-facebook icon_face"></a>
+        <a href="" class="fa fa-twitter icon_twitter"></a>
+        <a href="">English</a>
+        <a href="">My Page</a>
+        <a href="">Logout</a>
+      </div>
+      <div class="main_nav">
+        <a href="" class="icon_global_summit"><img src="./img/global_icon_summit.png" alt="global-logo"></a>
+        <a href="./about.html" class="menu_under color_about">About</a>
+        <a href="" class="menu_under">Program</a>
+        <a href="" class="menu_under">Join</a>
+        <a href="" class="menu_under">Sponsor</a>
+        <a href="" class="menu_under">News</a>
+        <a href="" class="menu_under_last">CC Campaign</a>
+      </div>
+    </nav>
     <div class="home_container">
-      <header class="row header_container">
+      <header class="row header_container head_container_desktop">
         <div class="container_img_header">
-          <span class="subtitle_header">"Hello! Sharing world"</span>
-          <h1><span>CREATIVE COMMONS GLOBAL SUMMIT 2015</span></h1>
+          <span class="subtitle_header">"Hello! welcome to the conference"</span>
+          <h1>CREATIVE ARMANDO SUMMER 2015</h1>
           <div class="bg_img_cero">
             <div class="bg_img_ball"></div>
           </div>
         </div>
         <p class="para_header">A joyful celebration believing in the value of openness and sharing,
           creating a positive change with people from over 80 countries is taking place
-          in October, in Korea.
+          in October, in Mexico.
         </p>
         <div class="container_under_header">
           <div class="dates_header">
-            2015.10.15(THU) ~ 16(FRI)
+            2022.10.15(THU) ~ 16(FRI)
           </div>
           <div class="subloc_header">
-            @National Museum of Korea, Art Center Nabi and more
+            @National Auditory, Mexico City
           </div>
         </div>
         <div class="container_last">
@@ -53,36 +73,46 @@
       <section class="row section_container">
         <h2 class="section_title">Main Program</h2>
         <hr class="section_title_deco">
-        <div class="section_part_one">
-          <div class="section_image_one"></div>
-          <div class="section_lecture">Lecture</div>
-          <div class="section_para_one">Listen to the speakers from various countries about the messeges of sharing and opening.</div>
+        <div class="container_parts">
+          <div class="section_part_one">
+            <div class="section_image_one"></div>
+            <div class="section_lecture">Lecture</div>
+            <div class="section_para_one">Listen to the speakers from various countries about their experiences in web development.</div>
+          </div>
+          <div class="section_part_one">
+            <div class="section_image_two"></div>
+            <div class="section_lecture">CC Exhibition</div>
+            <div class="section_para_one">Appreciate various creations applying web development practicess to it.</div>
+          </div>
+          <div class="section_part_one">
+            <div class="section_image_three"></div>
+            <div class="section_lecture">Forum</div>
+            <div class="section_para_one">Have the time to share your thoughts and opinions about best practices in web development.</div>
+          </div>
+          <div class="section_part_one">
+            <div class="section_image_four"></div>
+            <div class="section_lecture">Workshop</div>
+            <div class="section_para_one">We will be creating some works in the conference just to show up the new technologies comming up</div>
+          </div>
+          <div class="section_part_one">
+            <div class="section_image_five"></div>
+            <div class="section_lecture">CC Ignite</div>
+            <div class="section_para_one">Get opportunities to network and get jobs or work together in projects.</div>
+          </div>
         </div>
-        <div class="section_part_one">
-          <div class="section_image_two"></div>
-          <div class="section_lecture">CC Exhibition</div>
-          <div class="section_para_one">Appreciate various creations applying CC license of artists, organized from Art Center Nabi.</div>
-        </div>
-        <div class="section_part_one">
-          <div class="section_image_three"></div>
-          <div class="section_lecture">Forum</div>
-          <div class="section_para_one">Have the time to share your thoughts and opinions with experts for each topic.</div>
-        </div>
-        <div class="section_part_one">
-          <div class="section_image_four"></div>
-          <div class="section_lecture">Workshop</div>
-          <div class="section_para_one">Try creating your own work using open source license rather tan just watching.</div>
-        </div>
-        <div class="section_part_one">
-          <div class="section_image_five"></div>
-          <div class="section_lecture">CC Ignite</div>
-          <div class="section_para_one">Get opportunities to network with CC affiliates around the world, also after the summit.</div>
-        </div>
-        <button type="button" class="join_btn">Join CC Global Summit 2015</button>
+        <button type="button" class="join_btn">Join CC Global Summit 2022</button>
+        <a href="" class="see_program">SEE THE WHOLE PROGRAM</a>
       </section>
-      <section id="featured_section" class="row section_speakers">
+      <section id="featured_section_home" class="row section_speakers">
         <h6>H6</h6>
       </section>
+      <section id="featured_section_about" class="row section_speakers_desktop">
+        <h6>H6</h6>
+      </section>
+      <div class="containers_footer">
+        <div class="img_bg_speakers"></div>
+        <footer class="img_bg_footers"></footer>
+      </div>
     </div>
   </div>
 <script src="./javascript.js"></script>
