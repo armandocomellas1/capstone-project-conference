@@ -22,6 +22,10 @@ Conference page - HTML/CSS & JavaScript project
 - JAVASCRIPT
 - (Used Lighthouse, Webhint, and Stylelint as linters)
 
+### Descrition of the project:
+
+- This is a conference UI multipage web site that will take place in mexico a conference about technologies.
+- The purpose of this project is to show the responsive design and menu for desktop and smaller devices.
 
 ## Live Demo
 
