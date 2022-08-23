@@ -15,7 +15,7 @@ Conference page - HTML/CSS & JavaScript project
 - Use JavaScript events.
 - Use objects to store and access data.
 
-## Built With
+## List of technologies
 
 - HTML
 - CSS
