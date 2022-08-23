@@ -19,7 +19,7 @@ Conference page - HTML/CSS & JavaScript project
 
 - HTML
 - CSS
-- JAVASCRIPT
+- JavaScript
 - (Used Lighthouse, Webhint, and Stylelint as linters)
 
 ## Description of the project:
